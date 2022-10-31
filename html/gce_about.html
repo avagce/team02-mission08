@@ -11,10 +11,38 @@
             text-decoration: dotted;
             background-color: aquamarine;
             font-size: 50px;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
         }
-        li{list-style: none;}
+        .content{
+            position: fixed;
+            
+            width: 86%;
+            height: 500px;
+            background-image: linear-gradient(
+                rgba(255,255,255,0.5),rgba(255,255,255,0.5)
+            ),
+            url("/team02-mission-01/resources/images/gce/iuflowercover.jpg");
+            background-size: 500px;
+            background-repeat: no-repeat;
+            
+            float: right;
+            border: 1px solid blue;
+            
+        }
+        iframe{
+            position: fixed;
+            left: 180px;
+            top: 93px;
+        }
+        
+        
         a{
             text-decoration: none;
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
         }
         .conta::after{content: ""; display: block; clear: both;}
         .side{
@@ -22,11 +50,15 @@
         }
         .side li{
             border: 1px solid red;
+            list-style: none;
+           
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            /* padding: 10px; */
+            line-height: 100px;
         }
-        .content {
-            float: right;
-            border: 1px solid blue;
-        }
+       
         footer{
             text-align: center;
         }
@@ -36,13 +68,16 @@
     <header>IU 팬페이지</header>
     <container class="conta">
         <sidemenu class="side">
-            <li><a href="#">소개</a></li>
-            <li><a href="#">음반</a></li>
+            <li><a href="./gce_about_content/introduce_iu.html" target="conback">소 개</a></li>
+            <li><a href="#">음 반</a></li>
             <li><a href="#">배우활동</a></li>
             <li><a href="#">방송활동</a></li>
             <li><a href="#">수상경력</a></li>
         </sidemenu>
-        <content class="content">내용이 들어갈 부분</content>
+        <content class="content">
+           
+        </content>
+        <iframe src=""  name="conback" width="817.96px" height="515px" frameborder="0" framespacing="0" marginheight="0" marginwidth="0" scrolling="no" hspace=0 vspace=0></iframe>
     </container>
     <footer>copyright@
             IU 팬페이지

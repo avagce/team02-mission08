@@ -18,14 +18,14 @@ a{text-decoration: none;}
             margin: 10px;
         }
         .top_menu a{color: beige; transition: .3s;
-                    margin: 3px; font-size: 10px;}
-        .top_menu a:hover{color: beige; font-weight: bold; font-size: 12px;
+                    margin: 3px; font-size: 12px;}
+        .top_menu a:hover{color: beige; font-weight: bold; font-size: 14px;
                           text-decoration: underline; transform: scale(1.2);}
         nav{
             position: absolute;
             bottom: 10px;
             right: 2%;
-            font-size: 15px;
+            font-size: 18px;
         }
         nav li{
             color: beige;
@@ -33,7 +33,7 @@ a{text-decoration: none;}
             margin: 15px;
         }
         nav li a{color: beige; transition: .3s;}
-        nav li a:hover{color: beige; font-weight: bold; font-size: 17px;
+        nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
                        text-decoration: underline; transform: scale(1.2);}
         .box{display: block;
             text-align: center;

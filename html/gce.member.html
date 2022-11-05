@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var date = new Date();
+            var selYear = date.getFullYear();
+
+            getYears(selYear);
+            getDays(1);
+
+            $('#yearBox').val(selYear);
+
+            $('#yearBox').change(function(){
+                var chgYear = $(this).val();
+                getYears(chgYear);
+                $('#yearBox').val(chgYear);
+            });
+        });
+
+        $('#dayBox').change(function(){
+                var chgDay = $(this).val();
+                getDays(chgDay);
+                $('#dayBox').val(chgDay);
+            });
+
+        function getYears(getY){
+            $("#yearBox option").remove();
+
+            var stY = Number(getY)-70;
+            var enY = Number(getY)+5;
+            for(var y = stY; y<=enY;y++){
+                $('#yearBox').append("<option value='"+y+"'>"+y+"년"+"</option>");
+            }
+        }
+
+        function getDays(getD){
+            for(var d= 1; d<32;d++){
+                $('#dayBox').append("<option value='"+d+"'>"+d+"일"+"</option>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <h1>회원가입 페이지</h1>
+    </section>
+    <section>
+        <form name="login" action="#" method="post">
+            아이디 확인<br>
+            <input type="text" name="user_id" placeholder="아이디 입력">
+            <input type="button" name="user_idcheck" value="아이디 확인">
+            <br>비밀번호<br>
+            <input type="password" name="user_pw1" value="">
+            <br>비밀번호 재확인<br>
+            <input type="password" name="user_pw2" value="">
+            <input type="button" name="user_pwcheck" value="비밀번호 재확인">
+            <br>
+            <br>이름<br>
+            <input type="text" name="user_name" value="">
+            <br>생년월일<br>
+            <select id="yearBox"></select>
+            <select name="month">
+                <option value="">선택</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+
+            </select>
+            <select id="dayBox"></select>
+        
+
+        </form>
+    </section>
+    
+</body>
+</html>

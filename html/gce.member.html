@@ -19,7 +19,7 @@
             border-top: none;
             z-index: 99;
             top:100%;
-            left: 0;
+            left: 190px;
             right: 0;
         }
         .autocomplete-items div {
@@ -173,6 +173,37 @@
                 });
                 }
        
+
+                function pwtest(){
+                    var p1  = document.getElementById('user_pw1').value;
+                    var p2 = document.getElementById('user_pw2').value;
+                if(p1 != p2){
+                    alert("비밀번호가 일치 하지 않습니다");
+                    return false;
+                } else {
+                    alert("비밀번호가 일치합니다");
+                    return true;
+                }
+                };
+                function phonecheck(){
+                var phonevalue1=document.getElementById("phone");
+                var phonevalue2=document.getElementById("phone1").value;
+                var phonevalue3=document.getElementById("phone2").value;
+
+                 var pattern2 = new RegExp("^\\d{3}-\\d{3,4}-\\d{4}$");
+                 var phonestr = phonevalue1.options[phonevalue1.selectedIndex].value +"-"+ phonevalue2 +"-" + phonevalue3;
+               
+                 if(pattern2.test(phonestr)){
+                    alert("핸드폰 번호가 정상적 입니다");
+                    return;
+
+                 }else{
+                    alert("핸드폰 번호가 비정상적 입니다");
+                    return;
+                 }
+                };
+                
+
     </script>
    
 </head>
@@ -184,13 +215,13 @@
     <section>
         <form name="login" action="#" method="post">
             아이디 확인<br>
-            <input type="text" name="user_id" placeholder="아이디 입력">
+            <input type="text" name="user_id" placeholder="아이디 입력" required>
             <input type="button" name="user_idcheck" value="아이디 확인">
             <br>비밀번호<br>
-            <input type="password" name="user_pw1" value="">
+            <input type="password" id="user_pw1" value="" required>
             <br>비밀번호 재확인<br>
-            <input type="password" name="user_pw2" value="">
-            <input type="button" name="user_pwcheck" value="비밀번호 재확인">
+            <input type="password" id="user_pw2" value="" required>
+            <input type="button" name="user_pwcheck" value="비밀번호 재확인" onclick="pwtest()">
             <br>
             <br>이름<br>
             <input type="text" name="user_name" value="">
@@ -235,8 +266,16 @@
                     autocomplete(document.getElementById("email_domain"),emaildomain)
                 
             </script>
+            <br>핸드폰 번호<br>
+            <select id="phone">
+                <option value="010" selected>010</option>
+                <option value="011">011</option>
+                <option value="019">019</option>
+            </select>
+            <input type="text" id="phone1" value="" maxlength="4"> -  <input type="text" id="phone2" value="" maxlength="4">
+            <input type="button" name="phonecheck" value="핸드폰번호 체크" onclick="phonecheck()">
 
-        
+            
 
         </form>
     </section>

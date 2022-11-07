@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mission2.css">
+    <title>Y shirt S Join</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample4_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                var roadAddr = data.roadAddress; 
+                var extraRoadAddr = ''; 
+                if(extraRoadAddr !== ''){
+                    extraRoadAddr = ' (' + extraRoadAddr + ')';
+                }
+                document.getElementById('sample4_postcode').value = data.zonecode;
+                document.getElementById("sample4_roadAddress").value = roadAddr;
+                var guideTextBox = document.getElementById("guide");
+                if(data.autoRoadAddress) {
+                    var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                    guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                    guideTextBox.style.display = 'block';
+                } else {
+                    guideTextBox.innerHTML = '';
+                    guideTextBox.style.display = 'none';
+                }
+            }
+        }).open();
+    }
+</script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="logo">
+                <a href="Y shirt S.html" title="Y shirt S"><img src="resources/images/Y_shirt_S2.png" alt="Y shirt S"style="height: 94px;"></a>
+            </div>
+            <div class="top_menu">
+                <a href="Y shirt S.html" title="홈">홈</a>|
+                <a href="#" title="게시판">게시판</a>|
+                <a href="#" title="로그인">로그인</a>|
+                <a href="Y shirt S2.html" title="회원가입">회원가입</a>
+            </div>
+            <nav>
+                <li><a href="#" title="Best">Best</a></li>|
+                <li><a href="#" title="상의">Shirts</a></li>|
+                <li><a href="#" title="하의">Bottom</a></li>|
+                <li><a href="#" title="자켓">Outer</a></li>|
+                <li><a href="#" title="신발">Shoes</a></li>|
+                <li><a href="#" title="악세사리">Acc</a></li>|
+                <li><a href="#" title="고객센터">C/S</a></li>
+                <li class="search"><input type="search" title="검색어입력"><input type="button" value="검색" title="검색"></li>
+            </nav>
+        </header>
+        <div class="leftmenu">
+            <li><a href="#">아이디찾기<hr></a></li>
+            <li><a href="#">비밀번호찾기<hr></a></li>
+            <li><a href="#">마이페이지<hr></a></li>
+            <li><a href="#">고객센터<hr></a></li>
+            <li><a href="#">즐겨찾기<hr></a></li>
+        </div>
+        <form action="#" method="post">
+            <fieldset class="join_list">
+                <legend> 회 원 정 보  입 력</legend>
+                <li>회원구분 : <input type="checkbox"> <span>개인회원</span></li>
+                <li>이름 : <input type="text" placeholder="이름"></li>
+                <li>생년월일 : <input type="date">
+                <li>전화번호 : <select class="ph">
+                    <option>선택안함</option>
+                    <option>010</option>
+                    <option>011</option>
+                    <option>012</option>
+                    <option>016</option>
+                    <option>017</option>
+                    <option>070</option>
+                </select>
+                <input type="text" placeholder="휴대폰 번호"> <input class="button" type="button" value="인증"></li>
+                <li >아이디 : <input type="text" class="id" placeholder="아이디"><span> (영문소문자/숫자, 4~16자)</span></li>
+                <li>비밀번호 : <input type="password" class="passwd" placeholder="비밀번호"></li>
+                <li>비밀번호 확인 : <input type="password" placeholder="비밀번호 확인"></li>
+                <li>이메일 : <input type="text" placeholder="이메일"><span> @ </span>
+                    <select id="email">
+                        <option>naver.com</option>
+                        <option>daum.com</option>
+                        <option>gmail.com</option>
+                        <option></option>
+                        <option></option>
+                    </select></li>
+                <li>인증번호 : <input type="text" placeholder="인증번호"> <input class="button" type="button" value="확인"></li>
+                <li>주소 : <input type="text" id="sample4_postcode" placeholder="우편번호">
+                    <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+                    <input type="text" id="sample4_roadAddress" placeholder="도로명주소">
+                    <input type="text" id="sample4_jibunAddress" placeholder="지번주소">
+                </li>
+            </fieldset>
+        </form>
+        <div>
+            <p class="age"><input type="checkbox"> 만 14세 이상입니다. (필수)</p>
+            <p class="age_a">회원가입에 필요한 최소한의 정보만 입력 받음으로써, 고객님의 개인정보 수집을 최소화하고 편리한 회원가입을 제공합니다.</p>
+        </div>
+    </div>
+    <footer>
+        <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
+        | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221105@gmail.com) <br>
+        &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
+        <a href="#"> 개인정보 처리방침 |</a>
+        <a href="#"> 이용약관 |</a>
+         고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
+        고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
+        <li><a href="#">고객센터 |</a></li>
+        <li><a href="#">개인정보처리방침 |</a></li>
+        <li><a href="#">1:1문의 |</a></li>
+        <li><a href="#">이용약관</a></li>
+    </ul>
+</footer>
+</body>
+</html>

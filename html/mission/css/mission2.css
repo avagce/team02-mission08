@@ -1,10 +1,15 @@
 @charset "UTF-8";
-#page{position: relative;
-      font-family: 'Noto Sans KR', sans-serif;
-       margin: 0%;}
+#page{
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: auto;
+    }
 a{text-decoration: none;}
-li{list-style-type: circle;}
-span{font-size: 15px; }
+li{
+    list-style-type: none;
+    margin-top: 30px;
+}
+span{font-size: 11px;}
 legend{text-align: center; font-size: 30px;}
 header{
     width: 100%;
@@ -50,7 +55,7 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     float: left;
     background-color: #656e7a;
     width: 10%;
-    height: 700px;
+    height: 1200px;
     padding: 10px;
     color: white;
 }
@@ -58,10 +63,23 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     color: white; padding-left: 5px;
 }
 .leftmenu li a:hover{font-size: 18px;}
-.join_list{
+.sigup_list{
     position: relative;
+    margin: 3% 15% 0% 27%;
+    border-radius: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 70px;
 }
-.join_list li{margin-top: 15px; font-size: 20px;}
+.sigup_list label{
+    display: block;
+    margin: 5px;
+    font-size: 30px;
+}
+.sigup_list li{font-size: 20px;}
+.sigup_list input{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 23px;
+}
 .button{
     background-color: beige;
     color: #000 ;
@@ -92,3 +110,4 @@ footer li a{
 footer p a{color: #000;}
 footer p a:hover{font-weight: bold; text-decoration: underline;}
 footer li a:hover{font-weight: bold; text-decoration: underline;}
+#signup{text-align: center;}

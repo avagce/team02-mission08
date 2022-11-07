@@ -272,7 +272,7 @@
                 <option value="011">011</option>
                 <option value="019">019</option>
             </select>
-            <input type="text" id="phone1" value="" maxlength="4"> -  <input type="text" id="phone2" value="" maxlength="4">
+            <input type="text" id="phone1" pattern="\\d{3,4}" value="" maxlength="4" > -  <input type="text" id="phone2" pattern="\\d{4}$" value="" maxlength="4" >
             <input type="button" name="phonecheck" value="핸드폰번호 체크" onclick="phonecheck()">
 
             

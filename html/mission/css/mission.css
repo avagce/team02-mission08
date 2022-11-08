@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #page{position: relative;
       font-family: 'Noto Sans KR', sans-serif;
-       margin: 0%;}
+       margin: -8px;}
 a{text-decoration: none;}
         header{
             width: 100%;
@@ -29,6 +29,7 @@ a{text-decoration: none;}
             bottom: 10px;
             right: 2%;
             font-size: 18px;
+            color: beige;
         }
         nav li{
             color: beige;
@@ -67,7 +68,7 @@ a{text-decoration: none;}
             position: relative;
             padding: 10px;
             background-color: #e6e6e6;
-            margin-top: 10px;
+            margin: 10px -8px 0;
             width: 100%;
             bottom: -10px;
             font-family: 'Noto Sans KR', sans-serif;

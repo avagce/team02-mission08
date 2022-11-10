@@ -71,10 +71,6 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     color: white; padding-left: 5px;
 }
 .leftmenu li a:hover{font-size: 18px;}
-.join{background-image: url(../resources/images/shirts.jpg);
-    width: 100vw;
-    height: 265vh;
-}
 .sigup_list{
     position: absolute;
     margin: 3% 18% 3% 18%;

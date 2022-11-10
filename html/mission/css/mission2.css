@@ -97,6 +97,7 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     background-color: beige;
     color: #000 ;
     border-radius: 10px;
+    border: none;
     height: 26px;
 }
 .button:hover{

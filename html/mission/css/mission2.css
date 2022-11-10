@@ -13,7 +13,7 @@ li{
     margin-top: 30px;
 }
 span{font-size: 11px;}
-strong{color: #F45D5C;}
+label strong{color: #F45D5C;}
 legend{text-align: center; font-size: 30px;}
 header{
     width: 100%;
@@ -106,11 +106,12 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
 }
-#textarea{
-    width: 48vw;
-    text-align: left;
+#textarea{width: 48vw;}
+td,th{
+    border: 1px solid black;
+    text-align: center;
 }
-td,th{border: 1px solid black;}
+th{font-family: 'Noto Sans KR', sans-serif;}
 footer{
     position: relative;
     padding: 10px;
@@ -144,6 +145,4 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     font-size: 40px;
     letter-spacing: 10px;
 }
-#signup input:hover{
-    cursor: pointer;
-}
+#signup input:hover{cursor: pointer;}

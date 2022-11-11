@@ -4,236 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team02</title>
+    <title>2team page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
     <style type="text/css">
-        
-
         *{
-        color: rgb(252, 252, 252);
-        font-family: 'Noto Serif KR', serif;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;}
-
-        header{text-align: center;}
-        body{
-            background-color: rgb(0, 0, 0);
-        }
-      
-        .text{
-
-            display : inline-block;
-            background: rgba(6, 99, 229, 0.5);
-            width: auto; height: auto; line-height: 35px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-
-        }  
-        
-        li {list-style-type:none;}
-       
-        h3{
-            text-align: center;
             color: #fff;
-            font-size: 20px;}
-        
-
-        a{
-            color: #fff;
-            font-size: 20px;
-            margin-left: 130px;
-            background-color: rgb(139, 132, 132);
-        
+            font-family: 'Noto Serif KR', serif;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
         }
-
-      
-         /*hover*/   
-        .gce {
-        width: 458px;
-        margin: 0px auto;
-        position: relative
-        }
-        
-        .notebook2 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        display: none;
-        }
-        .gce:hover .notebook2 {
-        display: block;
-        }
-        .notebook2 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s linear;
-        }
-        .gce:hover .notebook2 {
-        opacity: 1;
-        }
-
-
-      
-        .kbh {
             
-        width: 458px;
-        margin: 0px auto;
-        position: relative
+        header{text-align: center;}
+         
+        body{
+            background-image: url(mainpage/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
-        .notebook2 {
+
+        p{
+            text-align: center;
+            font-size: 26px;
+            margin-top: -10px;
+            font-weight: lighter;
+            text-shadow: 5px 2px 3px rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        h3{ 
+            margin-top: auto;
+            padding: 100px;
+            text-align: center;
+            font-size: 80px;
+            text-shadow: 1px 0 black, 0 1px black, 10px 0 black, 0 1px black;
+
+        }
+      
+        .gce {
+        width: 200px;
+        margin: 100px auto;
+        position: relative;
+        }
+        .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
         }
-        .kbh:hover .notebook2 {
+        .gce:hover .folder2 {
         display: block;
+        margin: 50px;
+        opacity: 1;
         }
-        .notebook2 {
+
+        .kbh {
+        width: 200px;
+        margin: 100px auto;
+        position: relative
+        }
+        .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s linear;
+        display: none;
         }
-        .kbh:hover .notebook2 {
+        .kbh:hover .folder2 {
+        display: block;
+        margin: 50px;
         opacity: 1;
         }
         
-
         .kmj {
-        width: 458px;
-        margin: 0px auto;
+        width: 200px;
+        margin: 100px auto;
         position: relative
-        
         }
-        .notebook2 {
+        .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
         }
-        .kmj:hover .notebook2 {
+        .kmj:hover .folder2 {
         display: block;
-        }
-        .notebook2 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s linear;
-        }
-        .kmj:hover .notebook2 {
+        margin: 50px;
         opacity: 1;
         }
-
-
 
         .yys {
-        width: 458px;
-        margin: 0px auto;
+        width: 200px;
+        margin: 100px auto;
         position: relative
         }
-        .notebook2 {
+        .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
         }
-        .yys:hover .notebook2 {
+        .yys:hover .folder2 {
         display: block;
-        }
-        .notebook2 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s linear;
-        }
-        .yys:hover .notebook2 {
+        margin: 50px;
         opacity: 1;
         }
         
-
         .kny {
-        width: 458px;
-        margin: 0px auto;
+        width: 200px;
+        margin: 100px auto;
         position: relative
         }
-        .notebook2 {
+        .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
         }
-        .kny:hover .notebook2 {
+        .kny:hover .folder2 {
         display: block;
-        }
-        .notebook2 {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: opacity 0.5s linear;
-        }
-        .kny:hover .notebook2 {
+        margin: 50px;
         opacity: 1;
         }
 
-        div{display:inline-block}
+        div{
+            padding: 50px;
+            display:inline-block
+        }
 
 
 
     </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><h3> <strong>스터디 2 팀 홈페이지에 오신걸 환영합니다.</strong></h3></li>
-                <li><img src="resources/images/team02_logo.png" width="100px" height="100px"></li>
-            </ul>
-    </header>
-    
+        </head>
+        <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><h3> <strong>스터디 2 팀 회원가입 페이지에 오신걸 환영합니다.</strong></h3></li>
+                    <li><img src="mainpage/team02_logo.png" width="250px" height="250px"></li>
+                </ul>
+            </nav>
+        </header>
+        
     
         <div class="gce">
-            <img src="resources/images/notebook.PNG" alt="노트북" class="notebook1" width="400px" height="250px">
-            <img src="resources\images\gce_thubnail.jpg" alt="gcemain" class="notebook2" width="400px" height="250px">
-            <a href="html/gce_login.html" target="_blank">gce website <strong>==> go</strong></a>
+            <img src="mainpage/gce1.png" alt="폴더이미지" class="folder1" width="200px" height="250px">
+            <a href="html/gce_login.html" target="_blank">
+            <img src="mainpage/gce1_1.png" alt="gce_sign_up" class="folder2" width="200px" height="250px"></a>
+            <p>고창은_회원가입 페이지</p>
         </div>
-    
+
         <div class="kbh">
-            <img src="resources/images/notebook.PNG" alt="노트북" class="notebook1" width="400px" height="250px">
-            <img src="/resources/images/kbh-2.png" alt="kbhmain" class="notebook2" width="400px" height="250px">
-            <a href="html/kimbaekho_webpage.html" target="_blank">kbh website <strong>==> go</strong></a>
+            <img src="mainpage/kbh1.png" alt="폴더이미지" class="folder1" width="200px" height="250px">
+            <a href="html/kbh_sign up.html" target="_blank">
+            <img src="mainpage/kbh1_1.png" alt="kbh_sign_up" class="folder2" width="200px" height="250px"></a>
+            <p>김백호_회원가입 페이지</p>
+
         </div>
     
         <div class="kmj">
-            <img src="resources/images/notebook.PNG" alt="노트북" class="notebook1" width="400px" height="250px">
-            <img src="resources/images/kmj-2.png" alt="kmjmain" class="notebook2" width="400px" height="250px">
-            <a href="html/moonjeong_loginpage.html" target="_blank">kmj website <strong>==> go</strong></a>
+            <img src="mainpage/kmj1_1.png" alt="폴더이미지" class="folder1" width="200px" height="250px">
+            <a href="html/moonjeong_loginpage.html" target="_blank">
+            <img src="mainpage/kmj1.png" alt="kmj_sign_up" class="folder2" width="200px" height="250px"></a>
+            <p>김문정_회원가입 페이지</p>
+
         </div>
     
         <div class="yys">
-            <img src="resources/images/notebook.PNG" alt="노트북" class="notebook1" width="400px" height="250px">
-            <img src="resources/images/yys-2.png" alt="yysmain" class="notebook2" width="400px" height="250px">
-            <a href="html/mission/Y shirt S.html" target="_blank">yys website <strong>==> go</strong></a>
+            <img src="mainpage/kny1.png" alt="폴더이미지" class="folder1" width="200px" height="250px">
+            <a href="html/mission/Y shirt S.html" target="_blank">
+            <img src="mainpage/yys1_1.png" alt="yys_sign_up" class="folder2" width="200px" height="250px"></a>
+            <p>유영석_회원가입 페이지</p>
         </div>
     
         <div class="kny">
-            <img src="resources/images/notebook.PNG" alt="노트북" class="notebook1" width="400px" height="250px">
-            <img src="resources\images\kny-2.png" alt="knymain" class="notebook2" width="400px" height="250px">
-            <a href="html/nayoung2.html" target="_blank">kny website <strong>==> go</strong></a>
+            <img src="mainpage/kny1.png" alt="폴더이미지" class="folder1" width="200px" height="250px">
+            <a href="html/Nayoung2.html" target="_blank">
+            <img src="mainpage/kny1_1.png" alt="knysign_up" class="folder2" width="200px" height="250px"></a>
+            <p>김나영_회원가입 페이지</p>
         </div>
-    
-        
-
-    
-    
 </body>
 </html>

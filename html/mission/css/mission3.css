@@ -64,24 +64,19 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     color: white; padding-left: 5px;
 }
 .leftmenu li a:hover{font-size: 18px;}
-
-.FAQ{
-    position: relative;
-    margin: 3% 18% 3% 18%;
-    grid-column-start: 2; grid-column-end: 3;
+.FAQ_list{
+    text-align: center;
 }
-.FAQ li p{
-    border: 1px solid #000;
+.FAQ li div{
+    display: none;
 }
 .FAQ_list p{
-    text-align: center;
     font-size: 50px;
 }
 .FAQ_list ul li{
     position: relative;
     display: inline-block;
     text-align: center;
-    left: 20vw;
     margin: 30px 35px 0 35px;
     font-size: 30px;
 }
@@ -90,7 +85,24 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     transition: .5s;
 }
 .FAQ_list ul li a:hover{
-    transform: scale(1.1);
+    text-decoration: underline 3px;
+    transform: scale(1.2);
+}
+.FAQ{
+    margin: 3% 10%;
+    grid-column-start: 2; grid-column-end: 3;
+}
+.FAQ li{margin-top: 10px;}
+.FAQ li:hover{cursor: pointer;}
+#top {
+    position: absolute;
+    width: 80px;
+    left: 93%;
+    top: 745px;
+}
+#top .on{
+    position: fixed;
+    top: 745px;
 }
 footer{
     position: relative;
@@ -102,7 +114,11 @@ footer{
     grid-column-start: 1; grid-column-end: 4;
 
 }
-footer p{text-align: center; font-size: 10px; padding-top: 20px; line-height: 15px;}
+footer p{text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+    line-height: 15px;
+}
 footer li{display: inline;}
 footer li a{
     position: relative; left: 85%;

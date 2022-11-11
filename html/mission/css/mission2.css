@@ -75,7 +75,6 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     position: absolute;
     margin: 3% 18% 3% 18%;
     border-radius: 15px;
-    font-family: 'Noto Sans KR', sans-serif;
     padding: 70px;
     grid-column-start: 2; grid-column-end: 3;
     background: white;

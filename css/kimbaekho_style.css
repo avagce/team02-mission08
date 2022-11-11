@@ -60,6 +60,7 @@
 
 .nav>li{
     margin-left: 72px;
+    
 }
 
 .nav>li>a{
@@ -111,6 +112,15 @@ h2{
 }
 .text>li{
     color: #fff;
+    border: #f1f2f3;
     margin-left: 42px;
     font-size: 55px;
+}
+    
+
+.sign_up{
+    margin: 60px 1150px;
+    color: #fff;
+
+
 }

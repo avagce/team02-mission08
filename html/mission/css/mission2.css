@@ -1,7 +1,7 @@
 @charset "UTF-8";
+*{font-family: 'Noto Sans KR', sans-serif;}
 #page{
     position: relative;
-    font-family: 'Noto Sans KR', sans-serif;
     display: grid;
     grid-template-columns: 10% 90%;
     grid-template-rows: 95px 2500px 140px;
@@ -90,7 +90,6 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     font-size: 18px;
     width: 48vw;}
 .sigup_list input{
-    font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
 }
 .button{
@@ -111,7 +110,10 @@ td,th{
     border: 1px solid black;
     text-align: center;
 }
-th{font-family: 'Noto Sans KR', sans-serif;}
+td{
+    font-family: sans-serif;
+    font-size: 15px;
+}
 footer{
     position: relative;
     padding: 10px;
@@ -119,7 +121,6 @@ footer{
     margin: 10px -8px 0;
     width: 100%;
     bottom: -10px;
-    font-family: 'Noto Sans KR', sans-serif;
     grid-column-start: 1; grid-column-end: 4;
 
 }

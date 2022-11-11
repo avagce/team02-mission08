@@ -1,0 +1,117 @@
+@charset "UTF-8";
+*{font-family: 'Noto Sans KR', sans-serif;}
+#page{
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 95px 300px 2200px 140px;
+    margin: -8px;
+    }
+a{text-decoration: none;}
+.leftmenu li{
+    list-style-type: none;
+    margin-top: 30px;
+}
+span{font-size: 11px;}
+label strong{color: #F45D5C;}
+legend{text-align: center; font-size: 30px;}
+header{
+    width: 100%;
+    height: 100%;
+    background-color: #2d3a4b;
+    position: relative;
+    grid-column-start: 1; grid-column-end: 3;
+}
+.logo{height: 94px; margin-left: 40px;}
+.top_menu{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: beige;
+    margin: 10px;
+}
+.top_menu a{color: beige; transition: .3s;
+    margin: 3px; font-size: 12px;}
+.top_menu a:hover{color: beige; font-weight: bold; font-size: 14px;
+            text-decoration: underline; transform: scale(1.2);}
+nav{
+    position: absolute;
+    bottom: 10px;
+    right: 2%;
+    font-size: 18px;
+    color: beige;
+
+}
+nav li{
+    color: beige;
+    display: inline;
+    margin: 15px;
+}
+nav li a{color: beige; transition: .3s;}
+nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
+                text-decoration: underline; transform: scale(1.2);}
+.leftmenu{
+    position: static;
+    background-color: #656e7a;
+    width: 100%;
+    height: 2500px;
+    padding: 10px;
+    color: white;
+    grid-column-start: 1; grid-column-end: 2;
+    
+}
+.leftmenu li a{
+    color: white; padding-left: 5px;
+}
+.leftmenu li a:hover{font-size: 18px;}
+
+.FAQ{
+    position: relative;
+    margin: 3% 18% 3% 18%;
+    grid-column-start: 2; grid-column-end: 3;
+}
+.FAQ li p{
+    border: 1px solid #000;
+}
+.FAQ_list p{
+    text-align: center;
+    font-size: 50px;
+}
+.FAQ_list ul li{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    left: 20vw;
+    margin: 30px 35px 0 35px;
+    font-size: 30px;
+}
+.FAQ_list ul li a{
+    color: #000;
+    transition: .5s;
+}
+.FAQ_list ul li a:hover{
+    transform: scale(1.1);
+}
+footer{
+    position: relative;
+    padding: 10px;
+    background-color: #e6e6e6;
+    margin: 10px -8px 0;
+    width: 100%;
+    bottom: -10px;
+    grid-column-start: 1; grid-column-end: 4;
+
+}
+footer p{text-align: center; font-size: 10px; padding-top: 20px; line-height: 15px;}
+footer li{display: inline;}
+footer li a{
+    position: relative; left: 85%;
+    margin: 0px; 
+    font-size: 8px; 
+    color: #404040;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+footer p a{color: #000;}
+footer p a:hover{font-weight: bold; text-decoration: underline;}
+footer li a:hover{font-weight: bold; text-decoration: underline;}            

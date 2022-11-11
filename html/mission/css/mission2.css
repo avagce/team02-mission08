@@ -4,7 +4,7 @@
     font-family: 'Noto Sans KR', sans-serif;
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 95px 2300px 140px;
+    grid-template-rows: 95px 2500px 140px;
     margin: -8px;
     }
 a{text-decoration: none;}
@@ -61,7 +61,7 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     position: static;
     background-color: #656e7a;
     width: 100%;
-    height: 2300px;
+    height: 2500px;
     padding: 10px;
     color: white;
     grid-column-start: 1; grid-column-end: 2;
@@ -144,5 +144,9 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     color: white;
     font-size: 40px;
     letter-spacing: 10px;
+}
+.icon img{
+    width: 50px;
+    margin: 5px;
 }
 #signup input:hover{cursor: pointer;}

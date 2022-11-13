@@ -94,7 +94,11 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
 }
 .FAQ li{margin-top: 10px;}
 .FAQ li:hover{cursor: pointer;}
-#top {
+.FAQ fieldset{
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+#top img{
     position: absolute;
     width: 80px;
     left: 93%;
@@ -102,7 +106,9 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
 }
 #top .on{
     position: fixed;
+    left: 93%;
     top: 745px;
+    z-index: 10;
 }
 footer{
     position: relative;

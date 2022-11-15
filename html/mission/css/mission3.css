@@ -105,7 +105,7 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     word-wrap: keep-all;
 }
 .FAQ li{
-    margin-top: 10px;
+    margin: 15px 0;
     border-bottom: 1px solid #e9e9e9;
 }
 .FAQ #FAQ2 img{
@@ -131,8 +131,8 @@ nav li a:hover{color: beige; font-weight: bold; font-size: 20px;
     top: 85%;
     z-index: 10;
 }
-.Q{color: lightblue;}
-.A{color: lightcoral;}
+.Q{color: lightblue; font-size: 20px; margin-right: 10px;}
+.A{color: lightcoral; font-size: 20px;margin-right: 10px;}
 footer{
     position: relative;
     padding: 10px;
@@ -150,7 +150,8 @@ footer p{text-align: center;
 }
 footer li{display: inline;}
 footer li a{
-    position: relative; left: 85%;
+    position: relative;
+    left: 85%;
     margin: 0px; 
     font-size: 8px; 
     color: #404040;

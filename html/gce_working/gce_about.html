@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        header{
+          
+            text-align: center;
+            text-decoration: dotted;
+            /* background-color: aquamarine; */
+            font-size: 50px;
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+        }
+        
+        /* iframe{
+            position: fixed;
+            left: 172px;
+            top: 93px;
+            max-width: 600px;
+            max-height: 515px;
+        } */
+        
+        
+        a{
+            text-decoration: none;
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* .conta::after{content: ""; display: block; clear: both;} */
+        .side{
+            float: left;
+            
+            margin-left: 200px;
+        }
+        .side li{
+            
+            list-style: none;
+           
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            /* padding: 10px; */
+            line-height: 100px;
+        }
+        .side li a:hover{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        /* .content{
+           float: right;
+            margin-left: 402px;
+            float: none;
+            width: 800px;
+            height: 500px;
+            background-image: linear-gradient(
+                rgba(255,255,255,0.5),rgba(255,255,255,0.5)
+            ),
+            url("../resources/images/gce/iuflowercover.jpg");
+            background-size: 500px;
+            background-repeat: no-repeat;
+         
+        } */
+       
+        footer{
+           
+           float: center;
+            text-align: center;
+            /* margin-left: 225px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+    <header>IU 팬페이지</header>
+        </div>
+        <div id="sidemenu">
+        <nav class="side">
+                       <li><a href="gce_about_content/introduce_iu.html" target="conback">소 개</a></li>
+            <li><a href="gce_about_content/album_iu.html" target="conback">음 반</a></li>
+            <li><a href="gce_about_content/actor_iu.html" target="conback">배우활동</a></li>
+            <li><a href="gce_about_content/perform_iu.html" target="conback">방송활동</a></li>
+            <li><a href="gce_about_content/awards_iu.html" target="conback">수상경력</a></li>
+        </nav>
+        </div>
+        <!-- <div>
+        <section class="content" id="content2"></section>
+    </div> -->
+        <iframe src="gce_about_content/iu_main_title.html"  name="conback" frameborder="0" width="817.96px" height="515px" marginheight=0 marginwidth=0 scrolling="no" framespacing="0"  hspace=0 vspace=0></iframe>
+    <div>
+    <footer>copyright@
+            IU 팬페이지
+    </footer>
+</div>
+</div>
+</body>
+</html>

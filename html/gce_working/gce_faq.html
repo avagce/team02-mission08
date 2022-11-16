@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+    <style>
+            header{
+                
+                width: 500px;
+                height: 300px;
+
+                background-image:url(resources/gce/faqheader.jpg);
+                
+            }
+                .faq{border-bottom:0px solid #ddd;margin:1em 0;}
+        .faq .faqHeader{position:relative;zoom:1}
+        .faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
+        .faq .faqBody{margin:0;padding:0}
+        .faq .faqBody .article{list-style:none}
+        .faq .q{margin:auto;}
+        .faq .q a{display:block;text-align:left; 
+            background:url("resources/gce/iutexticon_resize.jpg") no-repeat 0 0;
+            padding:0 0 0 35px;
+            font-size:18px;
+            color:#5e5e5e;
+            font-weight:bold;
+            line-height: 27px;
+            cursor:pointer;
+            margin: 10px 0 !important;}
+        /* .faq .q a:hover{}
+        .faq .q a:active{} 
+        .faq .q a:focus{} */
+        .faq .a{background:#f8f8f8 url("resources/gce/iutexticon_resize.jpg") no-repeat 40px 10px;padding: 10px 75px 10px 75px;
+            font-size: 16px;
+            color: #444444;
+            line-height: 22px;
+            border-top: 1px solid #bdbdbd;
+            margin:5px 0 0 0;}
+    </style>
+    <script>
+           jQuery(function($){
+    // Frequently Asked Question
+    var article = $('.faq>.faqBody>.article');
+    article.addClass('hide');
+    article.find('.a').hide();
+    article.eq(0).removeClass('hide');
+    article.eq(0).find('.a').show();
+    $('.faq>.faqBody>.article>.q>a').click(function(){
+        var myArticle = $(this).parents('.article:first');
+        if(myArticle.hasClass('hide')){
+            article.addClass('hide').removeClass('show');
+            article.find('.a').slideUp(100);
+            myArticle.removeClass('hide').addClass('show');
+            myArticle.find('.a').slideDown(100);
+        } else {
+            myArticle.removeClass('show').addClass('hide');
+            myArticle.find('.a').slideUp(100);
+        }
+        return false;
+    });
+    $('.faq>.faqHeader>.showAll').click(function(){
+        var hidden = $('.faq>.faqBody>.article.hide').length;
+        if(hidden > 0){
+            article.removeClass('hide').addClass('show');
+            article.find('.a').slideDown(100);
+        } else {
+            article.removeClass('show').addClass('hide');
+            article.find('.a').slideUp(100);
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <header>
+      
+   </header>
+    <div class="faq">
+        <div class="faqHeader">
+            <!--button type="button" class="showAll">답변 모두 여닫기</button-->
+        </div>
+        <ul class="faqBody">
+            <li class="article" id="a1">
+                <p class="q"><a href="#a1">아이유 팬덤의 이름은?</a></p>
+                <p class="a">UAENA / U愛나 / 유애나</p>
+            </li>
+            <li class="article" id="a2">
+                <p class="q"><a href="#a2">공식 색상은?</a></p>
+                <p class="a" style="background-color: #E4E724;">네온 옐로우</p>
+            </li>
+            <li class="article" id="a3">
+                <p class="q"><a href="#a3">특징은?</a></p>
+                <p class="a">연령층이 매우 다양</p>
+            </li>
+            <li class="article" id="a4">
+                <p class="q"><a href="#a4">기수별 기간은?</a></p>
+                <p class="a">1기 2017년 8월 ~ 2018년 8월 / 2기 2018년 8월 ~ 2019년 8월 / 3기 2019년 8월 ~ 2020년 9월 4일 / 4기 2020년 9월 18일 ~ 2021년 12월 31일 / 5기 2022년 3월 1일 ~ 2023년 2월 28일</p>
+            </li>
+            <li class="article" id="a5">
+                <p class="q"><a href="#a4">팬사이트 알려주세요!</a></p>
+                <p class="a" onclick="location.href='https://cafe.daum.net/IU';" style="cursor: pointer;">공식 팬카페 : 유애나</p>
+                <p class="a" onclick="location.href='https://gall.dcinside.com/board/lists/?id=iu_new';" style="cursor: pointer;">디시인사이드 아이유 갤러리</p>
+                <p class="a" onclick="location.href='https://jieuninus.com/';" style="cursor: pointer;">지으니어스</p>
+                <p class="a" onclick="location.href='https://cafe.naver.com/singeriu/';" style="cursor: pointer;">러브유</p>
+                
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

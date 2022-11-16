@@ -12,8 +12,7 @@ li {
 }
 .gnb li a {
   display: inline-block;
-  background-color: rgb(99, 105, 110);
-  color: #000;
+  color: rgb(255, 255, 255);
   width: 400px;
   height: 30px;
   line-height: 30px;
@@ -22,7 +21,6 @@ li {
 }
 .gnb li a:hover {
   text-decoration: underline;
-  background: #fff;
 }
 .bg_fixed {
   min-height: 500px;

@@ -19,7 +19,7 @@
             }
                 .faq{border-bottom:0px solid #ddd;margin:1em 0;}
         .faq .faqHeader{position:relative;zoom:1}
-        .faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer}
+        /* .faq .faqHeader .showAll{position:absolute;bottom:0;right:0;border:0;padding:0;overflow:visible;background:none;cursor:pointer} */
         .faq .faqBody{margin:0;padding:0}
         .faq .faqBody .article{list-style:none}
         .faq .q{margin:auto;}
@@ -45,9 +45,9 @@
     <script>
            jQuery(function($){
     // Frequently Asked Question
-    var article = $('.faq>.faqBody>.article');
-    article.addClass('hide');
-    article.find('.a').hide();
+    var article = $('.faq>.faqBody>.article'); //li 클래스 지정
+    article.addClass('hide'); //li class=article 에 class 에 hide 가 있으면 답변쪽 p=a가 slideUp으로 숨겨짐
+    article.find('.a').hide(); //첫번째 답변을 열어놓기 위해 찾음
     article.eq(0).removeClass('hide');
     article.eq(0).find('.a').show();
     $('.faq>.faqBody>.article>.q>a').click(function(){
@@ -63,16 +63,16 @@
         }
         return false;
     });
-    $('.faq>.faqHeader>.showAll').click(function(){
-        var hidden = $('.faq>.faqBody>.article.hide').length;
-        if(hidden > 0){
-            article.removeClass('hide').addClass('show');
-            article.find('.a').slideDown(100);
-        } else {
-            article.removeClass('show').addClass('hide');
-            article.find('.a').slideUp(100);
-        }
-    });
+    // $('.faq>.faqHeader>.showAll').click(function(){
+    //     var hidden = $('.faq>.faqBody>.article.hide').length;
+    //     if(hidden > 0){
+    //         article.removeClass('hide').addClass('show');
+    //         article.find('.a').slideDown(100);
+    //     } else {
+    //         article.removeClass('show').addClass('hide');
+    //         article.find('.a').slideUp(100);
+    //     }
+    // });
 });
     </script>
 </head>

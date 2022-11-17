@@ -13,6 +13,11 @@
     }
 .box{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 body{margin: 0;}
+.button{
+    background: beige;
+    border: none;
+    border-radius: 5px ;
+}
 .leftmenu li{
     list-style-type: none;
     margin-top: 30px;

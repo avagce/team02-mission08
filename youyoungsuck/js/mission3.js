@@ -1,50 +1,40 @@
 $(document).ready(function(){
-    // $(".FAQ_list p").delay(100).animate({opacity: 0.8, top: 10}, 800, "swing")
-    $("#FAQ1").click(function(){
-        $("#FAQ1 .box").toggle("fast", "swing")
-    })
-    $("#FAQ2").click(function(){
-        $("#FAQ2 .box").toggle("fast", "swing")
-    })
-    $("#FAQ3").click(function(){
-        $("#FAQ3 .box").toggle("fast", "swing")
-    })
-    $("#FAQ4").click(function(){
-        $("#FAQ4 .box").toggle("fast", "swing")
-    })
-    $("#FAQ5").click(function(){
-        $("#FAQ5 .box").toggle("fast", "swing")
-    })
-    $("#FAQ6").click(function(){
-        $("#FAQ6 .box").toggle("fast", "swing")
-    })
-    $("#FAQ7").click(function(){
-        $("#FAQ7 .box").toggle("fast", "swing")
-    })
-    $("#FAQ8").click(function(){
-        $("#FAQ8 .box").toggle("fast", "swing")
-    })
-    $("#FAQ9").click(function(){
-        $("#FAQ9 .box").toggle("fast", "swing")
-    })
-    $("#FAQ10").click(function(){
-        $("#FAQ10 .box").toggle("fast", "swing")
-    })
-    $("#FAQ11").click(function(){
-        $("#FAQ11 .box").toggle("fast", "swing")
-    })
-    $("#FAQ12").click(function(){
-        $("#FAQ12 .box").toggle("fast", "swing")
-    })
-    $("#FAQ13").click(function(){
-        $("#FAQ13 .box").toggle("fast", "swing")
-    })
-    $("#FAQ14").click(function(){
-        $("#FAQ14 .box").toggle("fast", "swing")
-    })
-    $("#FAQ15").click(function(){
-        $("#FAQ15 .box").toggle("fast", "swing")
-    })
+    // $(function($){
+    //     var article = $('.FAQ>.FAQ1>.FAQ2>ul>li');
+    //     article.find('.box').hide();
+    //     $('.FAQ>.article').click(function(){
+            
+    //         var myArticle = $(this).parents('.article:first');
+    //         if(myArticle.hasClass('hide')){
+              
+    //             article.addClass('hide').removeClass('show');
+    //             article.find('.box').slideUp(100);
+    //             myArticle.removeClass('hide').addClass('show');
+    //             myArticle.find('.box').slideDown(100);
+    //         } else{
+    //             myArticle.removeClass('show').addClass('hide');
+    //             myArticle.find('.box').slideUp(100);
+    //         }
+    //         // console.log(".box");
+    //         return false;
+    //     });
+    var article = $('.faq>.faqBody>.article');
+    article.find('.a').hide();
+    $('.faq>.faqBody>.article>.q>a').click(function(){
+        var myArticle = $(this).parents('.article:first');
+        if(myArticle.hasClass('hide')){
+            article.addClass('hide').removeClass('show');
+            article.find('.a').slideUp(100);
+            myArticle.removeClass('hide').addClass('show');
+            myArticle.find('.a').slideDown(100);
+        } else{
+            myArticle.removeClass('show').addClass('hide');
+            myArticle.find('.a').slideUp(100);
+        }
+        return false;
+    });
+
+   
     $(window).scroll(function(){
         if($(this).scrollTop()> $(".top_menu").height()){
             $("#top img").addClass("on")
@@ -52,4 +42,6 @@ $(document).ready(function(){
             $("#top img").removeClass("on")
         }
     })
-})
+});    
+
+

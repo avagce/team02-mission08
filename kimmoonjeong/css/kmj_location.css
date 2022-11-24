@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  height: 80px;
+  background: none;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
+
+body {
+  font-size: 15px;
+}
+
+/* header */
+
+li > a {
+  padding: 25px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+.gnb li a {
+  background-color: none;
+  color: #000;
+  line-height: 0;
+  text-align: center;
+  text-decoration: dotted;
+  border-radius: 5px;
+}
+.gnb li a:hover {
+  text-decoration: underline;
+  background: #fff;
+}
+
+.info {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.otherwrap {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/*  */
+.shop {
+  font-size: 20px !important;
+  background: #000;
+  width: auto;
+  color: #fff;
+  border-radius: 10px;
+  font-style: italic;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+/* 대중교통 */
+.terms_tt1 {
+  display: inline-block;
+  width: 25px;
+  height: 5px;
+  background: rgb(116, 113, 145);
+}
+
+.transport {
+  text-align: center;
+}
+
+.transport tr {
+  float: left;
+}
+
+footer {
+  background: rgb(192, 188, 188);
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer div a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+footer > div > a {
+  padding: 30px;
+}
+
+footer div a {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 30px;
+  opacity: 0.5;
+}
+
+footer .insta {
+  background: url(../image/instagram.png) 0 0 no-repeat;
+}
+footer .youtube {
+  background: url(../image/youtube.png) 0 0 no-repeat;
+}
+footer .twitter {
+  background: url(../image/twitter.png) 0 0 no-repeat;
+}
+
+p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* 찾아오시는길 우측 */
+
+.home {
+  float: right;
+  display: inline-block;
+  clear: initial;
+  margin-right: 90px;
+}

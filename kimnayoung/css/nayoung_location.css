@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: 'Stylish', sans-serif;
+    color: #333;
+}
+
+body{
+    width: 1000px;
+    height: 1200px;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.sign{
+    width: 100%;
+    height: 140px;
+    background-image: url(../resources/images/sign_nayoung.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px 140px;
+    position: relative;
+    background-color: azure;
+    clear: both;
+    border-radius: 10px;
+
+}
+
+.logo{
+    float: left;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.logo img{
+    width: 120px;
+    height: 120px;
+    /* background-color: aqua; */
+    padding-left: 30px;
+    padding-bottom: 94px;
+}
+
+.title{
+    float: right;
+    width: 850px;
+    height: 140px;
+    line-height: 140px;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.title .title-text{
+    position: relative;
+    width: 760px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 80px;
+}
+
+.main-menu{
+    width: 100%;
+    height: 50px;
+    background-image: url(../resources/images/sign_nayoung.jpg);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    /* background-color: red; */
+}
+
+.main-menu li{
+    height: 50px;
+    width: 1000px;
+}
+
+.m-menu{
+    height: 50px;
+    line-height: 50px;
+    width: 1000px;
+    text-align: center;
+}
+
+.navi{
+    width: 1000px;
+    /* overflow: hidden; */
+}
+.navi  li{
+    float: left;
+    width: 250px;
+    height: 50px;
+    /* line-height: 60px; */
+    text-align: center;
+    /* padding: 10px 20px; */
+    /* overflow: hidden; */
+    
+}
+
+.navi li a{
+    width: 125px;
+    /* display: block; */
+    text-align: center;
+    background: url(../resources/images/submenu_nayoung.png);
+    background-repeat: no-repeat;
+    background-size: 125px 50px;
+    border-collapse: collapse;
+
+}
+
+a > .main-menu-bt{
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    width: 25px;
+}
+
+.submenu{
+    display: none;
+}
+
+#bodywrap{
+    width: 100%;
+    height: 800px;
+}
+
+.container{
+    width: 100%;
+    height: 800px;
+    /* background-color: aliceblue; */
+}
+
+#map{
+    top: 120px;
+}
+
+.left-menu{
+    float: left;
+    width: 19%;
+    height: 800px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(../resources/images/mainpage_nayoung.png);
+}
+
+.left-title{
+    font-size: 40px;
+    height: 90px;
+    line-height: 90px;
+}
+
+.left-menu li{
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.content{
+    float: right;
+    width: 80%;
+    height: 800px;
+    /* background-color: antiquewhite; */
+    background-image: url(../resources/images/mainpage_nayoung.png);
+    border-radius: 10px;
+}
+
+.main-page-title{
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 45px;
+}
+
+footer{
+    margin-top: 10px;
+    clear: both;
+    height: 200px;
+    width: 100%;
+    line-height: 200px;
+    /* background-color: rgba(248, 207, 250, 1); */
+    background-image: url(../resources/images/mainpage_nayoung.png);
+}
+
+.copy{
+    float: left;
+    height: 200px;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 200px;
+    color: #000;
+}
+
+.sns{
+    position: relative;
+    float: right;
+    height: 200px;
+    width: 50%;
+    top: 50px;
+}
+
+.sns ul{
+    text-align: center;
+}
+.sns ul li{
+    display: inline-block;
+}
+
+.sns img{
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    padding: 5px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.sns img:hover{
+    opacity: 0.5;
+}
+

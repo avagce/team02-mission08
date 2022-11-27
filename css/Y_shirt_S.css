@@ -143,9 +143,6 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin: 0 auto;
         padding: 0;
     }
-    body, html{
-        overflow-x: hidden;
-    }
     header{
         height: 50px;
         border: none !important;

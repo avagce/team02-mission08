@@ -27,9 +27,12 @@
                 <a href="#" title="회원가입">회원가입</a>
             </div>
             <a href="#">
+                <!-- bootstrap 사용하여 모바일 화면에서만 보여질 수 있도록 visible-xs 적용 -->
+                <!-- 네비게이션 바가 toggle할 수 있도록 navbar-toggle collapsed적용 -->
                 <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
             </a>
             <nav class="collapse navbar-collapse" id="bsnavibar">
+                <!-- toggle할 목록 지정 후 nav navbar-nav 적용 클릭하면 sildeUp,slideDown 함.-->
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#" title="Best">Best</a></li>
                     <li class="active"><a href="#" title="상의">Shirts</a></li>

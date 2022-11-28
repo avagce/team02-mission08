@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
     <script src="../javascript/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <script src="../javascript/jquery.bxslider.min.js"></script>
 </head>
 <body>
     <div id="page">
@@ -49,9 +51,11 @@
     </div>
     <div class="box">
         <p title="Welcome Y shirt S !">Welcome Y shirt S !</p>
-        <div class="bx-slider">
+        <div class="bxslider">
             <ul>
-                dd
+                <div><img src="../resources/images/yys_반집업 니트(블랙).jpg" alt="이미지1"></div>
+                <div><img src="../resources/images/yys_린넨 오버핏 셔츠.jpg 니트(블랙).jpg" alt="이미지1"></div>
+                <div><img src="../resources/images/yys_스캇 오버핏 셔츠.jpg 니트(블랙).jpg" alt="이미지1"></div>
             </ul>
         </div>
        
@@ -72,5 +76,15 @@
                 <li><a href="#">이용약관</a></li>
             </ul>
     </footer>
+
+    <script>
+        $('.bxslider').bxSlider({
+            loop:true,
+            speed:500,
+            auto: true,
+            stopAutoOnClick: true,
+            slideWidth: 300
+            });
+    </script>
 </body>
 </html>

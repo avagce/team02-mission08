@@ -65,6 +65,7 @@ header{
     width: 60px;
     height: 30px;
     border-radius: 10px;
+    border: none;
     font-size: 16px;
     margin-left: 5px;
 }
@@ -211,7 +212,8 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     .box li{
         margin: 10px;
         width: 70px;
-        height: 70px;
+        height: 100px;
+        vertical-align: top;
     }
     .box img{
         top: 0;

@@ -92,11 +92,10 @@ nav li a:hover{
     text-decoration: underline;
     transform: scale(1.2);
 }
-.bx-slider{
-    width: 100%;
+.slideimg{
+    width: 3000px;
     height: 500px;
     background: #2d3a4b;
-    margin: 50px 0;
 }
 .box{display: block;
     text-align: center;
@@ -197,20 +196,6 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         width: 30px !important;
         height: 20px !important;
         font-size: 8px;
-    }
-    .box li{
-        margin: 10px;
-        width: 70px;
-        height: 100px;
-        vertical-align: top;
-    }
-    .box img{
-        top: 0;
-        left: 0;
-        width: 70px;
-        height: 70px;
-        transition:.2s;
-        border-radius: 10px;
     }
     footer{
         visibility: hidden;

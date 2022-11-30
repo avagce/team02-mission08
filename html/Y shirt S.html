@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.css">
-    <script src="../javascript/jquery-2.2.4.min.js"></script>
     <link rel="stylesheet" href="../css/owl.carousel.css">
+    <script src="../javascript/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <script src="../javascript/jquery.bxslider.min.js"></script>
 </head>
 <body>
     <div id="page">
@@ -70,8 +72,8 @@
             </div>
         </div>       
     </div>
-    <div class="info">
-        <div>
+    <div class="market">
+        <div class="market_list">
             <li>
                 <a href="#"><img src="../resources/images/yys_market1.jpg" alt="이미지1"></a>
             </li>
@@ -155,7 +157,17 @@
                 $('.stop').on('click',function(){
                     owl.trigger('stop.owl.autoplay')
                 })
-        });
+
+                $('.market_list').bxSlider({
+                    auto: true,// 자동으로 애니메이션 시작
+                    autoControls: true, // 시작 및 중지버튼 표시
+                    speed:500,  // 애니매이션 전환 속도 설정(500 = 500ms = 0.5s = 0.5초)
+                    stopAutoOnClick: true,  // 애니메이션 유지 시간(1000 = 1000ms = 1s = 1초) 
+                    pager: true, // 이전(<) 또는 다음(>) 버튼을 누르면 슬라이드가 정지됨
+                    slideWidth: 300 // 페이지 표시 보여짐.
+                });
+            }); 
+
     </script>
 </body>
 </html>

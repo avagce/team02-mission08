@@ -12,6 +12,9 @@
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
 }
+html, body{
+    /* overflow-x: hidden; */
+}
 body{
     width: 100%;
     height: 100%;
@@ -107,20 +110,30 @@ nav li a:hover{
 .box p{
     font-size: 40px;
 }
+.bx-wrapper{
+    width: 90% !important;
+}
+.bx-viewport{
+    height: 500px;
+}
 .market{
     width: 100%;
-    height: 300px;
+    height: 550px;
 }
 .market_list{
     width: 100%;
 }
 .market img{
     width: 100%;
-    height: 300px;
+    height: 490px;
+}
+#wrapper{
+    margin-bottom: 40px;
 }
 .center{
     margin: 30px 30px;
-    width: 99%;
+    margin-right: 30px;
+    width: 98%;
     height: 165px;
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;;
@@ -156,8 +169,7 @@ nav li a:hover{
     margin-bottom: 10px;
 }
 .notice{
-    position: absolute;
-    right: 50px;
+    float: right;
     width: 22%;
     height: 18vh;
     padding: 10px;
@@ -169,17 +181,20 @@ nav li a:hover{
 }
 .notice_title span{
     margin-top: 4px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
 }
 .notice li{
     line-height: 20px;
 }
+.notice h4{
+    font-size: 20px;
+}
 .notice span{
     float: right;
 }
 .notice a{
-    font-size: 1rem;
+    font-size: 16px;
     font-family: 'MonoplexKR-Regular';
     color: #000;
 }
@@ -198,7 +213,8 @@ footer p{
 }
 footer li{display: inline;}
 footer li a{
-    position: relative; left: 85%;
+    position: relative; 
+    left: 80%;
     margin: 0px; 
     font-size: 8px; 
     color: #404040;
@@ -212,6 +228,9 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     *{
         margin: 0 auto;
         padding: 0;
+    }
+    html, body{
+        overflow-x: hidden;
     }
     header{
         height: 50px;
@@ -277,15 +296,32 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     #wrapper img{
         height: 200px;
     }
+    .market{
+        height: 350px;
+    }
+    .bx-viewport{
+        height: 300px !important;
+    }
+    .market img{
+        width: 100%;
+        height: 290px;
+    }
     .notice{
         position: absolute;
         right: 0;
+    }
+    .notice_title h4{
+        font-size: 11px;
+        line-height: 17px;
+    }
+    .notice_title span{
+        font-size: 11px;
     }
     .notice ul{
         margin-top: 10px;
     }
     .notice li{
-        font-size: .8rem;
+        font-size: 8px;
         line-height: 10px;
     }
     .notice a{

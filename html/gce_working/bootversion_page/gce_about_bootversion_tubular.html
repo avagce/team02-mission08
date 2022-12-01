@@ -11,27 +11,30 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/about_bootversion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 </head>
 <style>
+   
     .content{
-      background-image: url("");
-    }
-
+      
+            background-image: url("resources/gce/iu_actor.jpg");
+          
+        
+    } 
     .ligroup{
-     
-     margin-top: 120px; 
+      padding-top: 5%;
+      padding-left: 15%;
+      
       
     }
     .ligroup ul{
       background-color: rgba(0,0,0,0);
-      display: table;
-      margin-left: auto;
-      margin-right: auto;
+      
       
     }
     .ligroup ul li{
       background-color: rgba(0,0,0,0);
-      color: rgb(7, 42, 73);
+      color: aliceblue;
       border: rgba(0,0,0,0);
       
     }
@@ -40,12 +43,7 @@
       .embed-responsive-4by3{
         display: none;
       }
-
-      .header{
-        z-index: 3;
-      }
-
-
+      
      .ligroup{
       padding-top: 30%;
      }
@@ -54,24 +52,26 @@
       .list-group-item{
         padding: 0.1rem;
         margin: 0.1rem;
-        font-size: 0.1rem;
-       
-      }
-      .list-group-item img{
-        z-index: 1;
-        max-width: 100%;
-        height: auto;
-      }
-      .content{
-        height: auto;
+        font-size: 0.5rem;
       }
     }
-     
+    footer{
+      margin-left: 10%;
+    }
+    .photogallery{
+      margin-top: 300px;
+      z-index: 99;
+    }
+    
     
    
     
 </style>
+<script>
+  
+</script>
 <body>
+  <div id="wrapper">
     <div class="all_wrap">
         
         <div class="youtube_top">
@@ -121,52 +121,67 @@
                               <i class="fa-sharp fa-solid fa-award"><a class="nav-link active" aria-current="page" href="gce_about_bootversion_awards.html">수상경력</a></i>
                                 
                              </li>
-                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  메뉴
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">갤러리</a></li>
-                                  
-                                </ul>
+
+                             <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="gce_about_bootversion_tubular.html">갤러리</a>
+                                
+                             </li>
+                               
+                               
                               </li>
                               
                             </ul>
-                          
                           </div>
                         </div>
                       </nav>
 
+
+                      
+                        
+                          <a href="#" class="tubular-play">재생</a>
+                          <a href="#" class="tubular-pause">일시정지</a>
+                          <a href="#" class="tubular-volume-up">소리키우기</a>
+                          <a href="#" class="tubular-volume-down">소리줄이기</a>
+                          <a href="#" class="tubular-mute">소리 끄기</a>
+
+
+                          <div class="photo-gallery">
+                            <div class="container">
+                                <div class="intro">
+                                    <h2 class="text-center" style="color:aliceblue">갤러리</h2>
+                                    <p class="text-center" style="color:aliceblue">IU 갤러리 </p>
+                                </div>
+                                <div class="row photos">
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="resources/gce/award_iu.jpg" data-lightbox="photos"><img class="img-fluid" src="resources/gce/award_iu.jpg"></a></div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="resources/gce/faqheader.jpg" data-lightbox="photos"><img class="img-fluid" src="resources/gce/faqheader.jpg"></a></div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="resources/gce/gce_member_img.jpg" data-lightbox="photos"><img class="img-fluid" src="resources/gce/gce_member_img.jpg"></a></div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="resources/gce/iu_actor.jpg" data-lightbox="photos"><img class="img-fluid" src="resources/gce/iu_actor.jpg"></a></div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="resources/gce/iuflowercover.jpg" data-lightbox="photos"><img class="img-fluid" src="resources/gce/iuflowercover.jpg"></a></div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="resources/gce/iumain.jpg" data-lightbox="photos"><img class="img-fluid" src="resources/gce/iumain.jpg"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                         </div>
+                      
+                        
+                      
                      
         </div>
         
-        <div class="content">
-          <div class="ligroup">
-          <ul class="list-group">
-            <li class="list-group-item"><img src="resources/gce/perfom_iu.jpg"></li>
-            <li class="list-group-item">인기가요</li>
-            <li class="list-group-item">최강연승 퀴즈쇼 Q</li>
-            <li class="list-group-item">SBS 가요대전</li>
-            <li class="list-group-item">아이유의 팔레트</li>
-            <li class="list-group-item">음악여행 라라라</li>
-            <li class="list-group-item">불후의 명곡 2</li>
-            <li class="list-group-item">피크닉 라이브 소풍</li>
-            <li class="list-group-item">히든싱어2</li>
-            <li class="list-group-item">판타스틱 듀오 시즌2</li>
-            <li class="list-group-item">영웅호걸</li>
-            <li class="list-group-item">무한도전</li>
-            <li class="list-group-item">런닝맨</li>
-            <li class="list-group-item">김연아의 키스 앤 크라이</li>
-            <li class="list-group-item">해피투게더3</li>
-            <li class="list-group-item">효리네 민박</li>
-            <li class="list-group-item">아는 형님</li>
-            
-          </ul>
-         </div>
-         </div>
-    
+        
+      
+      <script src="js/jquery.tubular.1.0.js"></script>
+      <script>
+          $('document').ready(function() {
+    var options = { videoId: 'flym1vF3cvw', mute: true };
+    $('#wrapper').tubular(options);
+     
+    // f-UGhWj1xww cool sepia hd
+    // 49SKbS7Xwf4 beautiful barn sepia
+          });
+      </script>
         
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 </body>
 </html>
-

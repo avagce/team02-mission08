@@ -3,11 +3,11 @@
 /* 1. 눈누 ttf 파일, 다폰트 ttf 파일 폰트 적용 */
 @font-face {
   font-family: "NEO";
-  src: url("/resources/NanumSquareNeo-bRg.ttf") format("truetype");
+  src: url("../resources/images/NanumSquareNeo-bRg.ttf") format("truetype");
 }
 @font-face {
   font-family: "Luxerie";
-  src: url("/resources/Luxerie.ttf") format("truetype");
+  src: url("../resources/images/Luxerie.ttf") format("truetype");
 }
 
 * {
@@ -35,7 +35,7 @@ p {
 }
 
 header {
-  background: url(/resources/kmj_header.jpg);
+  background: url(../resources/images/kmj_header.jpg);
   text-align: center;
   height: 400px;
   width: auto;
@@ -110,13 +110,13 @@ footer div a {
 }
 
 footer .insta {
-  background: url(/resources/kmj_ins.svg) 0 0 no-repeat;
+  background: url(../resources/images/kmj_ins.svg) 0 0 no-repeat;
 }
 footer .youtube {
-  background: url(/resources/kmj_youtube.svg) 0 0 no-repeat;
+  background: url(../resources/images/kmj_youtube.svg) 0 0 no-repeat;
 }
 footer .twitter {
-  background: url(/resources/kmj_twitter.svg) 0 0 no-repeat;
+  background: url(../resources/images/kmj_twitter.svg) 0 0 no-repeat;
 }
 
 @media (max-width: 600px) {

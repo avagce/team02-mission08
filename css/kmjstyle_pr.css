@@ -18,17 +18,17 @@ html {
 }
 
 #ms1 {
-  background-image: url(/resources/kmj-prf.jpg);
+  background-image: url(../resources/images/kmj-prf.jpg);
 }
 
 #ms2 {
-  background-image: url(/resources/kmj_pracc.jpg);
+  background-image: url(../resources/images/kmj_pracc.jpg);
 }
 #ms3 {
-  background-image: url(/resources/kmj_prcomm.jpg);
+  background-image: url(../resources/images/kmj_prcomm.jpg);
 }
 #ms4 {
-  background-image: url(/resources/kmj_prhome.jpg);
+  background-image: url(../resources/images/kmj_prhome.jpg);
 }
 
 @media (max-width: 600px) {

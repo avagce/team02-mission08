@@ -157,7 +157,9 @@
                     margin : 20,    // 사진간의 간격
                     autoplay : true,    // 자동 재생
                     autoplayTimeout : 3000, // 자동 재생 시간 (2000ms = 2s, 2000밀리초 = 2초)
-                    autoplayHoverPause : true // 재생화면 위로 마우스를 올리면 멈춤
+                    autoplayHoverPause : true, // 재생화면 위로 마우스를 올리면 멈춤
+                    nav: true, // nav버튼 활성화
+                    navText : ['이전','다음'], // navText 표현 지정
                 });
                 $('.play').on('click',function(){
                     owl.trigger('play.owl.autoplay',[3000])
@@ -174,7 +176,6 @@
                     slideWidth: 1200, // 페이지의 width(폭) 1200px
                 });
             }); 
-
     </script>
 </body>
 </html>

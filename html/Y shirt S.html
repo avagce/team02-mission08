@@ -35,7 +35,7 @@
                 <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
             </a>
             <nav class="collapse navbar-collapse" id="bsnavibar">
-                <!-- toggle할 목록 지정 후 nav navbar-nav 적용 클릭하면 sildeUp,slideDown 함.-->
+                <!-- toggle할 목록 지정 후 nav navbar-nav 적용, 클릭하면 sildeUp,slideDown 함.-->
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#" title="Best">Best</a></li>
                     <li class="active"><a href="#" title="상의">Shirts</a></li>
@@ -104,20 +104,9 @@
         <div class="notice">
             <ul>
                 <li class="notice_title">
-                    <h4> notice <span>공지사항</span></h4>
+                    <h4> notice <small>공지사항</small></h4>
                 </li>
-                <li>
-                    <a href="#">■ 할인상품 / 할인날짜 안내<span>2022.12.14</span></a> 
-                </li>
-                <li>
-                    <a href="#">■ 할인상품 / 할인날짜 안내<span>2022.12.17</span></a> 
-                </li>
-                <li>
-                    <a href="#">■ 배송지연 및 문의사항 안내<span>2022.12.16</span></a> 
-                </li>
-                <li>
-                    <a href="#">■ 12월 크리스마스 이벤트 안내<span>2023.01.15</span></a> 
-                </li>
+                
             </ul>
         </div>
     </div>
@@ -159,11 +148,11 @@
                 })
 
                 $('.market_list').bxSlider({
-                    auto: true,// 자동으로 애니메이션 시작
-                    speed:500,  // 애니매이션 전환 속도 설정(500 = 500ms = 0.5s = 0.5초)
+                    auto: true,// 자동재생
+                    speed:500,  // 사진 전환 속도 설정(500 = 500ms = 0.5s = 0.5초)
                     stopAutoOnClick: true,  // 애니메이션 유지 시간(1000 = 1000ms = 1s = 1초) 
-                    pager: true, // 이전(<) 또는 다음(>) 버튼을 누르면 슬라이드가 정지됨
-                    slideWidth: 1200, // 페이지 표시 보여짐.
+                    pager: true, // 이전(<), 다음(>) 버튼을 누르면 슬라이드가 정지됨
+                    slideWidth: 1200, // 페이지의 width(폭) 1200px
                 });
             }); 
 

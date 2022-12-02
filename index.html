@@ -1,193 +1,262 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2team page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&family=Ubuntu:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <style type="text/css">
-        *{
-            color: #fff;
-            font-family: 'Noto Serif KR', serif;
-            font-family: 'Ubuntu', sans-serif;
-            text-align: center;
-            list-style: none;
-        }
-            
-        header{text-align: center;}
-         
-        body{
-            background-image: url(resources/images/teampage_img/background.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0 auto;
-            position: relative;
-        }
+      * {
+        color: #fff;
+        font-family: "Noto Serif KR", serif;
+        font-family: "Ubuntu", sans-serif;
+        text-align: center;
+        list-style: none;
+      }
 
-        p{
-            text-align: center;
-            font-size: 21px;
-            margin-top: -10px;
-            font-weight: lighter;
-            text-shadow: 5px 2px 3px rgb(0, 0, 0);
-            text-decoration: none;
-        }
+      header {
+        text-align: center;
+      }
 
-        h3{ 
-            margin-top: 50px;
-            padding: 100px;
-            text-align: center;
-            font-size: 50px;
-            text-shadow: 2px 0 black, 0 3px black, 3px 0 black, 0 4px black;
-        }
-      
-        .gce {
+      body {
+        background-image: url(resources/images/teampage_img/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      p {
+        text-align: center;
+        font-size: 21px;
+        margin-top: -10px;
+        font-weight: lighter;
+        text-shadow: 5px 2px 3px rgb(0, 0, 0);
+        text-decoration: none;
+      }
+
+      h3 {
+        margin-top: 50px;
+        padding: 100px;
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 2px 0 black, 0 3px black, 3px 0 black, 0 4px black;
+      }
+
+      .gce {
         width: 210px;
         margin: 100px auto;
         position: relative;
-        }
-        .folder2 {
+      }
+      .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
-        }
-        .gce:hover .folder2 {
+      }
+      .gce:hover .folder2 {
         display: block;
         padding: 1px 55px;
         opacity: 1;
-        }
+      }
 
-        .kbh {
+      .kbh {
         width: 200px;
         margin: 100px auto;
-        position: relative
-        }
-        .folder2 {
+        position: relative;
+      }
+      .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
-        }
-        .kbh:hover .folder2 {
+      }
+      .kbh:hover .folder2 {
         display: block;
         padding: 1px 51px;
         opacity: 1;
-        }
-        
-        .kmj {
+      }
+
+      .kmj {
         width: 200px;
         margin: 100px auto;
-        position: relative
-        }
-        .folder2 {
+        position: relative;
+      }
+      .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
-        }
-        .kmj:hover .folder2 {
+      }
+      .kmj:hover .folder2 {
         display: block;
         padding: 1px 50px;
         opacity: 1;
-        }
+      }
 
-        .yys {
+      .yys {
         width: 200px;
         margin: 100px auto;
-        position: relative
-        }
-        .folder2 {
+        position: relative;
+      }
+      .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
-        }
-        .yys:hover .folder2 {
+      }
+      .yys:hover .folder2 {
         display: block;
         padding: 1px 51px;
         opacity: 1;
-        }
-        
-        .kny {
+      }
+
+      .kny {
         width: 200px;
         margin: 100px auto;
-        position: relative
-        }
-        .folder2 {
+        position: relative;
+      }
+      .folder2 {
         position: absolute;
         top: 0px;
         left: 0px;
         display: none;
-        }
-        .kny:hover .folder2 {
+      }
+      .kny:hover .folder2 {
         display: block;
         padding: 1px 51px;
         opacity: 1;
-        }
+      }
 
-        div{
-            padding: 1px;
-            display:inline-block
-        }
+      div {
+        padding: 1px;
+        display: inline-block;
+      }
 
-        img{
-            margin-top: -50px;
-        }
-
-
-
+      img {
+        margin-top: -50px;
+      }
     </style>
-        </head>
-        <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><h3> <strong>스터디 2 팀 반응형 웹페이지에 오신걸 환영합니다.</strong></h3></li>
-                    <li><img src="resources/images/teampage_img/team02_logo.png" width="150px" height="150px"></li>
-                </ul>
-            </nav>
-        </header>
-        
-    
-        <div class="gce">
-            <img src="resources/images/teampage_img/gce1.png" alt="폴더이미지" class="folder1" width="100px" height="150px">
-            <a href="html/gce_working/gce_about_bootversion.html" target="_blank">
-            <img src="resources/images/teampage_img/gce1_1.png" alt="gce_sign_up" class="folder2" width="100px" height="150px"></a>
-            <p>고창은_페이지</p>
-        </div>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <h3>
+              <strong>스터디 2 팀 반응형 웹페이지에 오신걸 환영합니다.</strong>
+            </h3>
+          </li>
+          <li>
+            <img
+              src="resources/images/teampage_img/team02_logo.png"
+              width="150px"
+              height="150px"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="kbh">
-            <img src="resources/images/teampage_img/kbh1.png" alt="폴더이미지" class="folder1" width="100px" height="150px">
-            <a href="html/kbh_webpage.html" target="_blank">
-            <img src="resources/images/teampage_img/kbh1_1.png" alt="kbh_sign_up" class="folder2" width="100px" height="150px"></a>
-            <p>김백호_페이지</p>
+    <div class="gce">
+      <img
+        src="resources/images/teampage_img/gce1.png"
+        alt="폴더이미지"
+        class="folder1"
+        width="100px"
+        height="150px"
+      />
+      <a href="html/gce_working/gce_about_bootversion.html" target="_blank">
+        <img
+          src="resources/images/teampage_img/gce1_1.png"
+          alt="gce_sign_up"
+          class="folder2"
+          width="100px"
+          height="150px"
+      /></a>
+      <p>고창은_페이지</p>
+    </div>
 
-        </div>
-    
-        <div class="kmj">
-            <img src="resources/images/teampage_img/kmj1_1.png" alt="폴더이미지" class="folder1" width="100px" height="150px">
-            <a href="html/moonjeong_loginpage.html" target="_blank">
-            <img src="resources/images/teampage_img/kmj1.png" alt="kmj_sign_up" class="folder2" width="100px" height="150px"></a>
-            <p>김문정_페이지</p>
+    <div class="kbh">
+      <img
+        src="resources/images/teampage_img/kbh1.png"
+        alt="폴더이미지"
+        class="folder1"
+        width="100px"
+        height="150px"
+      />
+      <a href="html/kbh_webpage.html" target="_blank">
+        <img
+          src="resources/images/teampage_img/kbh1_1.png"
+          alt="kbh_sign_up"
+          class="folder2"
+          width="100px"
+          height="150px"
+      /></a>
+      <p>김백호_페이지</p>
+    </div>
 
-        </div>
-    
-        <div class="yys">
-            <img src="resources/images/teampage_img/yys1.png" alt="폴더이미지" class="folder1" width="100px" height="150px">
-            <a href="html/Y_shirt_S_main.html" target="_blank">
-            <img src="resources/images/teampage_img/yys1_1.png" alt="yys_sign_up" class="folder2" width="100px" height="150px"></a>
-            <p>유영석_페이지</p>
-        </div>
-    
-        <div class="kny">
-            <img src="resources/images/teampage_img/kny1.png" alt="폴더이미지" class="folder1" width="100px" height="150px">
-            <a href="html/about_nayoung.html" target="_blank">
-            <img src="resources/images/teampage_img/kny1_1.png" alt="knysign_up" class="folder2" width="100px" height="150px"></a>
-            <p>김나영_페이지</p>
-        </div>
-</body>
+    <div class="kmj">
+      <img
+        src="resources/images/teampage_img/kmj1_1.png"
+        alt="폴더이미지"
+        class="folder1"
+        width="100px"
+        height="150px"
+      />
+      <a href="html/kmj_about.html" target="_blank">
+        <img
+          src="resources/images/teampage_img/kmj1.png"
+          alt="kmj_sign_up"
+          class="folder2"
+          width="100px"
+          height="150px"
+      /></a>
+      <p>김문정_페이지</p>
+    </div>
+
+    <div class="yys">
+      <img
+        src="resources/images/teampage_img/yys1.png"
+        alt="폴더이미지"
+        class="folder1"
+        width="100px"
+        height="150px"
+      />
+      <a href="html/Y_shirt_S_main.html" target="_blank">
+        <img
+          src="resources/images/teampage_img/yys1_1.png"
+          alt="yys_sign_up"
+          class="folder2"
+          width="100px"
+          height="150px"
+      /></a>
+      <p>유영석_페이지</p>
+    </div>
+
+    <div class="kny">
+      <img
+        src="resources/images/teampage_img/kny1.png"
+        alt="폴더이미지"
+        class="folder1"
+        width="100px"
+        height="150px"
+      />
+      <a href="html/about_nayoung.html" target="_blank">
+        <img
+          src="resources/images/teampage_img/kny1_1.png"
+          alt="knysign_up"
+          class="folder2"
+          width="100px"
+          height="150px"
+      /></a>
+      <p>김나영_페이지</p>
+    </div>
+  </body>
 </html>

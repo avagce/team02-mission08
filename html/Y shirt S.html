@@ -31,11 +31,12 @@
             <a href="#">
                 <!-- fontawesom 사용 -->
                 <!-- bootstrap 사용하여 큰화면 데스크탑 화면에서 보이지 않도록 hidden-lg적용 -->
-                <!-- 네비게이션 바가 toggle할 수 있도록 navbar-toggle collapsed적용 -->
+                <!-- 뷰포트가 좁을 때 nav가 보여지지 않도록 navbar-toggle collapsed적용 -->
+                <!-- 뷰포트가 좁을 때 처음 #bsnavidar가 숨겨질 수 있도록 data-toggle="collapse"을 적용, fontawesom 이미지가 클릭했을 때 data-target의 메뉴가 toggle할 수 있도록 id값을 알맞게 설정 -->
                 <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
             </a>
+            <!-- id값을 동일하게 bsnavibar 적용 -->
             <nav class="collapse navbar-collapse" id="bsnavibar">
-                <!-- toggle할 목록 지정 후 nav navbar-nav 적용, 클릭하면 sildeUp,slideDown 함.-->
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#" title="Best">Best</a></li>
                     <li class="active"><a href="#" title="상의">Shirts</a></li>
@@ -111,15 +112,13 @@
                         <thead>
                             <tr>
                                 <th>1</th>
-                                <td><a href="#">■ 할인행사</a></td>
-                                <td>2022.12.25</td>
+                                <td><a href="#"> ■ 크리스마스 이벤트</a><span>2022.12.25</span></td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th>2</th>
-                                <td><a href="#"> ■ 할인행사</a></td>
-                                <td>2022.12.27</td>
+                                <td><a href="#">■ 할인행사 </a><span>2022.12.27</span></td>
                             </tr>
                         </tbody>
                     </table>

@@ -1,5 +1,8 @@
+@charset "utf-8";
+
+
 *{
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Cafe24Ssurround';
     font-size: 23px;
     font-weight: bolder;
     list-style: none;
@@ -10,7 +13,7 @@
 }
 
 .intro_bg{
-    background-image:url(../img/mart01.jpg);
+    background-image:url(../resources/images/kimbaekho_images/mart01.jpg);
     width: 1280px;
     height: 700px;
 }
@@ -124,3 +127,96 @@ h2{
 
 
 }
+
+@font-face {
+font-family: 'Cafe24Ssurround';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+};
+
+
+.text img{
+    position: absolute;
+    margin-top: -170px;
+    margin-left: 10px;
+}
+
+.copy {
+    float: left;
+    height: 100px;
+    width: 500px;
+    /* text-align: center; */
+    /* font-size: 16px; */
+    line-height: 100px;
+    color: #ffffff;
+}
+
+.site img{
+    height: 80px;
+    width: 80px;
+    display: block;
+    float: left;
+    padding: 10px;
+    
+}
+
+
+#wrapper{
+    display: contents;
+    position: initial;
+    width: 1000px;
+    height: 300px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+#wrapper img{
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+
+
+.navbar-inverse .navbar-brand{
+    font-size: 35px;
+    color: #ffbb00;
+}
+
+.container-fluid{
+    background-color: #5fa7ff;
+}
+
+.text{
+    float: left;
+}
+
+.bodywrap{
+    height: 500px;
+    width: 900px;
+    float: left;
+    align-items: center;
+
+
+    /* background: red; */
+}
+
+.imgslide{
+    height: 400px;
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+    float: right;
+    margin-top: 50px;
+    /* background: green; */
+}
+
+i{
+    margin-top: 10px;
+}
+
+.navbar-brand{
+    color: #ffbb00 !important;
+} 
+

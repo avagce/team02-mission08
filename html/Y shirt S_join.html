@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Y_shirt_S_join.css">
     <title>Y shirt S Join</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../javascript/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script src="../javascript/test.js"></script>
+    <script src="../javascript/Y_shirt_s_join.js"></script>
+
 </head>
 <body>
     <div id="page">
@@ -21,47 +22,52 @@
                 <a href="Y shirt S.html" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"style="height: 94px;"></a>
             </div>
             <div class="top_menu">
-                <a href="#" title="홈">홈</a>|
+                <a href="Y shirt S.html" title="홈">홈</a>|
                 <a href="#" title="게시판">게시판</a>|
                 <a href="#" title="로그인">로그인</a>|
-                <a href="#" title="회원가입">회원가입</a>
+                <a href="Y shirt S2.html" title="회원가입">회원가입</a>
             </div>
             <a href="#">
-                <i class="fas fa-bars"></i>
+                <!-- fontawesom 사용 -->
+                <!-- bootstrap 사용하여 큰화면 데스크탑 화면에서 보이지 않도록 hidden-lg적용 -->
+                <!-- 뷰포트가 좁을 때 nav가 보여지지 않도록 navbar-toggle collapsed적용 -->
+                <!-- 뷰포트가 좁을 때 처음 #bsnavidar가 숨겨질 수 있도록 data-toggle="collapse"을 적용, fontawesom 이미지가 클릭했을 때 data-target의 메뉴가 toggle할 수 있도록 id값을 알맞게 설정 -->
+                <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
             </a>
-            <nav>
-                <ul>
-                    <li><a href="#" title="Best">Best</a></li>
-                    <li><a href="#" title="상의">Shirts</a></li>
-                    <li><a href="#" title="하의">Bottom</a></li>
-                    <li><a href="#" title="자켓">Outer</a></li>
-                    <li><a href="#" title="신발">Shoes</a></li>
-                    <li><a href="#" title="악세사리">Acc</a></li>
-                    <li><a href="#" title="고객센터">C/S</a></li>
-                    <li><input class="search1" type="search" title="검색어입력"><input class="search2" type="button" value="검색" title="검색"></li>
+            <!-- id값을 동일하게 bsnavibar 적용 -->
+            <nav class="collapse navbar-collapse visible-xs" id="bsnavibar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" title="Best">Best</a></li>
+                    <li class="active"><a href="#" title="상의">Shirts</a></li>
+                    <li class="active"><a href="#" title="하의">Bottom</a></li>
+                    <li class="active"><a href="#" title="자켓">Outer</a></li>
+                    <li class="active"><a href="#" title="신발">Shoes</a></li>
+                    <li class="active"><a href="#" title="악세사리">Acc</a></li>
+                    <li class="active"><a href="#" title="고객센터">C/S</a></li>
+                    <li class="search"><input class="search1" type="search" title="검색어입력"><input class="search2" type="button" value="검색" title="검색"></li>
                 </ul>
             </nav>
         </header>
-        <div class="leftmenu">
-            <li><a href="#">아이디찾기<hr></a></li>
-            <li><a href="#">비밀번호찾기<hr></a></li>
-            <li><a href="#">마이페이지<hr></a></li>
-            <li><a href="#">고객센터<hr></a></li>
-            <li><a href="#">즐겨찾기<hr></a></li>
-        </div>
         <div class="join">
-            <img src="../resources/images/signup_login_icon.ico" alt="회원가입이미지" style="float: left; margin: 50px 90px; width: 70px; height: 70px;">
+            <div class="leftmenu">
+                <li><a href="#">아이디찾기<hr></a></li>
+                <li><a href="#">비밀번호찾기<hr></a></li>
+                <li><a href="#">마이페이지<hr></a></li>
+                <li><a href="#">고객센터<hr></a></li>
+                <li><a href="#">즐겨찾기<hr></a></li>
+            </div>
+            <img src="../resources/images/signup_login_icon.ico" alt="회원가입이미지" style="float: left; margin-top: 50px; margin-left: 18%; width: 70px; height: 70px;">
             <form action="#" method="post">
                 <fieldset class="sigup_list">
                     <legend> 회 원 정 보  입 력</legend>
-                    <p style="font-size: 12px; color: #F45D5C;">*는 필수 입력 사항입니다.</p>
+                    <p style="font-size: 14px; color: #F45D5C;">*는 필수 입력 사항입니다.</p>
                     <li>
                         <label for="checkbox">회원구분<strong> *</strong></label>
                         개인회원 <input type="radio" name="member" required> 사업자회원 <input type="radio" name="member"> 외국인회원(foreigner) <input type="radio" name="member"><hr>
                     </li> 
                     <li>
                         <label for="name">이름<strong> *</strong></label>
-                        <input type="text" placeholder="이름" id="name" style="border: 3px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input type="text" placeholder="이름" id="name" style="border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
                     </li>
                     <li>
                         <label for="gender">성별<strong> *</strong></label>
@@ -69,10 +75,10 @@
                     </li>
                     <li>
                         <label for="rrn1">주민등록번호<strong> *</strong></label>
-                        <input type="text" id="rrn1" placeholder="앞 6자리" maxlength="6" style="width: 120px; border: 3px solid #2d3a4b; border-radius: 7px;" required> - <input type="password" id="rrn2" placeholder="뒷 7자리" maxlength="7" style="width: 120px; border: 3px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input type="text" id="rrn1" placeholder="앞 6자리" maxlength="6" style="width: 120px; border: 1px solid #2d3a4b; border-radius: 7px;" required> - <input type="password" id="rrn2" placeholder="뒷 7자리" maxlength="7" style="width: 120px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
                     </li>
                         <label for="date">생년월일<strong> *</strong></label>
-                        <input type="date" id="date" style="width: 200px; border: 3px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input type="date" id="date" style="width: 100px; height: 25px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
                     </li>
                     <div>
                         <p style="color: blue;"><input type="checkbox" required> 만 14세 이상입니다. (필수)</p>
@@ -308,19 +314,20 @@
             </form>
         </div>
         <footer>
-            <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
-            | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221111@gmail.com) <br>
-            &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
-            <a href="#"> 개인정보 처리방침 |</a>
-            <a href="#"> 이용약관 |</a>
-            고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
-            고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
-            <li><a href="#">고객센터 |</a></li>
-            <li><a href="#">개인정보처리방침 |</a></li>
-            <li><a href="#">1:1문의 |</a></li>
-            <li><a href="#">이용약관</a></li>
-        </ul>
-    </footer>
-</div>
+                <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
+                | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221111@gmail.com) <br>
+                &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
+                <a href="#"> 개인정보 처리방침 |</a>
+                <a href="#"> 이용약관 |</a>
+                고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
+                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
+                <ul>
+                    <li><a href="#">고객센터 |</a></li>
+                    <li><a href="#">개인정보처리방침 |</a></li>
+                    <li><a href="#">1:1문의 |</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+        </footer>
+    </div>
 </body>
 </html>

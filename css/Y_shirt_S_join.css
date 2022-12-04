@@ -12,6 +12,7 @@
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
 }
+
 body{
     width: 100%;
     height: 100%;
@@ -59,6 +60,9 @@ header{
     margin-top: 18px;
     margin-right: 20px;
 }
+.sigup_list strong{
+    color: #F45D5C;
+}
 .search{
     position: absolute;
     padding-top: 10px;
@@ -84,16 +88,6 @@ header{
     border-radius: 10px;
     width: 150px;
     color: #000;
-}
-.search2{
-    width: 60px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 5px;
-    background: #656e7a;
 }
 nav{
     display: inline-block !important;
@@ -197,6 +191,7 @@ td{
     color: white;
     font-size: 40px;
     letter-spacing: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 footer{
     position: relative;
@@ -237,6 +232,28 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     }
     .join{
     }
+    .top_menu{
+        font-size: 10px !important;
+    }
+    nav > ul{
+        font-size: 14px;
+    }
+    nav > ul> li{
+        margin: 0 !important;
+    }
+    nav > ul > a{
+        margin: 10px;
+    }
+    .search2{
+        width: 40px;
+        height: 25px;
+        border-radius: 10px;
+        border: none;
+        font-size: 14px;
+        margin-top: 12px;
+        margin-left: 5px;
+        background: #656e7a;
+    }
  }
 @media (max-width: 767px) {
     *{
@@ -256,7 +273,7 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: -30px;
     }
     .top_menu{
-        margin-right: -60px;
+        margin-right: -40px;
         color: #2d3a4b;
     }
     .top_menu a{
@@ -284,21 +301,28 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: 10px;
         font-weight: normal;
     }
+    .search img{
+        width: 20px;
+        height: 15px;
+        top: 20px;
+        right: 2px;
+    }
     .search1{
         position: relative;
         height: 20px;
-        width: 85px;
+        width: 120px;
         font-size: 8px;
-    }
-    .search2{
-        position: absolute;
-        width: 30px !important;
-        height: 20px !important;
-        font-size: 8px;
+        margin-left: -10px;
     }
     .fas{
         background: none !important;
         border: none !important;
         color: #fff;
+    }
+    .sigup_list label{
+        font-size: 16px;
+    }
+    #signup input{
+        font-size: 30px;
     }
 }   

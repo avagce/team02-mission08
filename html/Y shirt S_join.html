@@ -37,14 +37,20 @@
             <!-- id값을 동일하게 bsnavibar 적용 -->
             <nav class="collapse navbar-collapse visible-xs" id="bsnavibar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" title="Best">Best</a></li>
-                    <li class="active"><a href="#" title="상의">Shirts</a></li>
-                    <li class="active"><a href="#" title="하의">Bottom</a></li>
-                    <li class="active"><a href="#" title="자켓">Outer</a></li>
-                    <li class="active"><a href="#" title="신발">Shoes</a></li>
-                    <li class="active"><a href="#" title="악세사리">Acc</a></li>
-                    <li class="active"><a href="#" title="고객센터">C/S</a></li>
-                    <li class="search"><input class="search1" type="search" title="검색어입력"><input class="search2" type="button" value="검색" title="검색"></li>
+                    <li class="active text-capitalize"><a href="#" title="Best">best</a></li>
+                    <li class="active text-capitalize"><a href="#" title="상의">shirts</a></li>
+                    <li class="active text-capitalize"><a href="#" title="하의">bottom</a></li>
+                    <li class="active text-capitalize"><a href="#" title="자켓">outer</a></li>
+                    <li class="active text-capitalize"><a href="#" title="신발">shoes</a></li>
+                    <li class="active text-capitalize"><a href="#" title="악세사리">acc</a></li>
+                    <li class="active text-capitalize"><a href="#" title="고객센터">c/s</a></li>
+                    <li class="search">
+                        <input class="search1 visible-lg" type="search" title="검색어입력" placeholder="검색">
+                        <img class="visible-lg" src="../resources/images/yys_search_icon.svg" alt="검색아이콘">
+                    </li>
+                    <li>
+                        <input class="search2 hidden-lg" type="button" value="검색" title="검색">
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -95,7 +101,7 @@
                             <option>017</option>
                             <option>070</option>
                         </select> - 
-                            <input type="tel" placeholder="0000-0000형식으로 입력" id="ph" pattern="\d{3,4}-\d{4}" title="휴대폰번호는 0000-0000형식으로 입력해주세요." style="width: 170px;"> <input type="button" value="인증" class="button">
+                            <input type="tel" placeholder="7,8자리 입력" id="ph" pattern="\d{3,4}-\d{4}" title="7,8자리로 입력해주세요." style="width: 170px;"> <input type="button" value="인증" class="button">
                     </li>
                     <li>
                         <label for="phctfc"></label>

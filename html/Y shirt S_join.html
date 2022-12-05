@@ -87,7 +87,7 @@
                         <input class="form-control" type="password" id="rrn2" placeholder="뒷 7자리" maxlength="7" style="width: 120px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
                     </li>
                         <label for="date">생년월일<strong> *</strong></label>
-                        <input class="form-control" type="date" id="date" style="width: 100px; height: 25px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input class="form-control" type="date" id="date" style="width: 150px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
                     </li>
                     <div>
                         <p style="color: blue;"><input type="checkbox" required> 만 14세 이상입니다. (필수)</p>
@@ -104,11 +104,13 @@
                             <option>017</option>
                             <option>070</option>
                         </select> - 
-                            <input class="form-control" type="tel" placeholder="7,8자리 입력" id="ph" pattern="\d{3,4}-\d{4}" title="7,8자리로 입력해주세요." style="width: 150px;"> <input type="button" value="인증" class="button">
+                            <input class="form-control" type="tel" placeholder="7,8자리 입력" id="ph" pattern="\d{3,4}-\d{4}" title="7,8자리로 입력해주세요." style="width: 150px;">
+                            <input class="btn btn-primary" type="button" value="인증" class="button">
                     </li>
                     <li>
                         <label for="phctfc"></label>
-                        <input class="form-control" type="text" placeholder="인증번호 6자리" id="phctfc" maxlength="6" style="width: 150px; height: 26px;"> <input type="button" name="phctfc" class="button" value="인증받기" required><hr>
+                        <input class="form-control" type="text" placeholder="인증번호 6자리" id="phctfc" maxlength="6" style="width: 150px;">
+                        <input class="btn btn-success" type="button" name="phctfc" class="button" value="인증받기" required><hr>
                     </li>
                     <li>
                         <label for="id">아이디<strong> *</strong></label>
@@ -314,7 +316,7 @@
                             <hr>
                         </li>
                     </li>
-                    <li id="signup"><input type="submit" value="동의하고 회원가입"></li>
+                    <li id="signup"><input class="btn btn-primary" type="submit" value="동의하고 회원가입"></li>
                 </fieldset>
             </form>
         </div>

@@ -22,10 +22,12 @@
                 <a href="#" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"></a>
             </div>
             <div class="top_menu">
-                <a href="#" title="홈">홈</a>
-                <a href="#" title="게시판">게시판</a>
-                <a href="#" title="로그인">로그인</a>
-                <a href="#" title="회원가입">회원가입</a>
+                <ul>
+                    <li><a href="#" title="홈">홈</a></li>
+                    <li><a href="#" title="게시판">게시판</a></li>
+                    <li><a href="#" title="로그인">로그인</a></li>
+                    <li><a href="#" title="회원가입">회원가입</a></li>
+                </ul>
             </div>
             <a href="#">
                 <!-- fontawesom 사용 -->
@@ -73,7 +75,7 @@
                     </li> 
                     <li>
                         <label for="name">이름<strong> *</strong></label>
-                        <input type="text" placeholder="이름" id="name" style="border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input class="form-control" type="text" placeholder="이름" id="name" style="width: 150px;" required><hr>
                     </li>
                     <li>
                         <label for="gender">성별<strong> *</strong></label>
@@ -81,10 +83,11 @@
                     </li>
                     <li>
                         <label for="rrn1">주민등록번호<strong> *</strong></label>
-                        <input type="text" id="rrn1" placeholder="앞 6자리" maxlength="6" style="width: 120px; border: 1px solid #2d3a4b; border-radius: 7px;" required> - <input type="password" id="rrn2" placeholder="뒷 7자리" maxlength="7" style="width: 120px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input class="form-control" type="text" id="rrn1" placeholder="앞 6자리" maxlength="6" style="width: 120px; border: 1px solid #2d3a4b; border-radius: 7px;" required> - 
+                        <input class="form-control" type="password" id="rrn2" placeholder="뒷 7자리" maxlength="7" style="width: 120px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
                     </li>
                         <label for="date">생년월일<strong> *</strong></label>
-                        <input type="date" id="date" style="width: 100px; height: 25px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input class="form-control" type="date" id="date" style="width: 100px; height: 25px; border: 1px solid #2d3a4b; border-radius: 7px;" required><hr>
                     </li>
                     <div>
                         <p style="color: blue;"><input type="checkbox" required> 만 14세 이상입니다. (필수)</p>
@@ -92,7 +95,7 @@
                     </div>
                     <li>
                         <label for="ph">전화번호<strong> *</strong></label>
-                        <select style="height: 27px; font-family: 'Noto Sans KR', sans-serif;" required>
+                        <select class="form-control" style="height: 35px; font-family: 'Noto Sans KR', sans-serif; width: 80px;" required>
                             <option>선택안함</option>
                             <option selected>010</option>
                             <option>011</option>
@@ -101,26 +104,26 @@
                             <option>017</option>
                             <option>070</option>
                         </select> - 
-                            <input type="tel" placeholder="7,8자리 입력" id="ph" pattern="\d{3,4}-\d{4}" title="7,8자리로 입력해주세요." style="width: 170px;"> <input type="button" value="인증" class="button">
+                            <input class="form-control" type="tel" placeholder="7,8자리 입력" id="ph" pattern="\d{3,4}-\d{4}" title="7,8자리로 입력해주세요." style="width: 150px;"> <input type="button" value="인증" class="button">
                     </li>
                     <li>
                         <label for="phctfc"></label>
-                        <input type="text" placeholder="인증번호 6자리" id="phctfc" maxlength="6" style="width: 150px; height: 26px;"> <input type="button" name="phctfc" class="button" value="인증받기" required><hr>
+                        <input class="form-control" type="text" placeholder="인증번호 6자리" id="phctfc" maxlength="6" style="width: 150px; height: 26px;"> <input type="button" name="phctfc" class="button" value="인증받기" required><hr>
                     </li>
                     <li>
                         <label for="id">아이디<strong> *</strong></label>
-                        <input type="text" id="id" placeholder="아이디" maxlength="16" required><span> (영문소문자/숫자, 4~16자)</span><hr>
+                        <input class="form-control" type="text" id="id" placeholder="아이디" maxlength="16" required style="width: 150px;"><span> (영문소문자/숫자, 4~16자)</span><hr>
                     </li>
                     <li>
                         <label for="passwd">비밀번호<strong> *</strong></label>
-                        <input type="password" id="passwd" placeholder="비밀번호"  maxlength="16" required> <span>(영문대소문자/숫자4~16자)</span>
+                        <input class="form-control" type="password" id="passwd" placeholder="비밀번호"  maxlength="16" required style="width: 150px;"> <span>(영문대소문자/숫자4~16자)</span>
                         <label for="passwdok">비밀번호 확인</label>
-                        <input type="password" id="passwdok" placeholder="비밀번호 확인" maxlength="16" required><hr>
+                        <input class="form-control" type="password" id="passwdok" placeholder="비밀번호 확인" maxlength="16" required style="width: 150px;"><hr>
                     </li>
                     <li>
                         <label for="email">이메일<strong> *</strong></label>
-                        <input type="text"  id="email" placeholder="이메일" autocomplete="on" required><span> @ </span>
-                        <select style="height: 28px;">
+                        <input class="form-control" type="text"  id="email" placeholder="이메일" autocomplete="on" required style="width: 150px;"><span> @ </span>
+                        <select class="form-control" style="height: 35px; width: 150px;">
                             <option value="직접입력">직접입력</option>
                             <option>naver.com</option>
                             <option>daum.com</option>
@@ -129,15 +132,15 @@
                     </li>
                     <li>
                         <label for="sample6_postcode">주소<strong> *</strong></label>
-                        <input type="text" id="sample6_postcode" placeholder="우편번호" required>
-                        <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" id="button" class="button"><br>
-                        <input type="text" id="sample6_address" placeholder="주소" style="margin-top: 5px" required>
-                        <input type="text" id="sample6_extraAddress" placeholder="참고항목" style="margin-top: 5px"><br>
-                        <input type="text" id="sample6_detailAddress" placeholder="상세주소" style="width: 22vw; margin-top: 5px;" required><hr>
+                        <input class="form-control" type="text" id="sample6_postcode" placeholder="우편번호" required style="width: 150px;">
+                        <input class="form-control" type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" id="button" class="button" style="width: 120px;"><br>
+                        <input class="form-control" type="text" id="sample6_address" placeholder="주소" style="margin-top: 5px; width: 200px;" required >
+                        <input class="form-control" type="text" id="sample6_extraAddress" placeholder="참고항목" style="margin-top: 5px; width: 200px;"><br>
+                        <input class="form-control" type="text" id="sample6_detailAddress" placeholder="상세주소" style="width: 22vw; margin-top: 5px; width: 405px;" required><hr>
                     </li>
                     <li>
                         <label>이용약관 동의 <span style="color: red;">(필수)</span> <input type="checkbox" style="right: 5%;" required></label>
-                        <textarea id="textarea" cols="145vw" rows="10vw" readonly style="resize: none;">
+                        <textarea class="form-control" id="textarea" cols="145vw" rows="10vw" readonly style="resize: none;">
 제1조(목적) 이 약관은 Y shirt S가 운영하는 업체 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 규정함을 목적으로 합니다.
 ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
 제2조(정의)
@@ -276,11 +279,7 @@
                     </li>
                     <li>
                         <p>광고성 정보 수신 (선택)</p>
-                        <table style="border-collapse: collapse; width: 100%;  text-align: center;">
-                            <colgroup>
-                                <col>
-                                <col>
-                            </colgroup>
+                        <table class="table-bordered">
                             <thead>
                                 <tr style="height: 50px;">
                                     <th>수신</th>

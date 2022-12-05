@@ -37,7 +37,7 @@ header{
     line-height: 40px;
     color: #fff;
     position: absolute;
-    right: 0px;
+    right: 40px;
 }
 .top_menu li{
     display: inline;
@@ -141,7 +141,7 @@ legend{
 .leftmenu li a:hover{font-size: 15px;}
 .sigup_list{
     position: absolute;
-    margin: 3% 18% 3% 29%;
+    margin: 3% 18% 3% 27%;
     border-radius: 15px;
     padding: 70px;
     background: white;
@@ -152,6 +152,14 @@ legend{
     font-size: 22px;
 }
 .sigup_list input{
+    display: inline;
+    font-family: "맑은 고딕";
+}
+.sigup_list select{
+    display: inline;
+    font-family: "맑은 고딕";
+}
+.sigup_list option{
     font-family: "맑은 고딕";
 }
 .button{
@@ -168,9 +176,8 @@ legend{
     border-radius: 10px;
     cursor: pointer;
 }
-#textarea{width: 48vw;}
+#textarea{width:100%;}
 td,th{
-    border: 1px solid black;
     text-align: center !important;
     padding: 10px !important;
     font-size: 15px;
@@ -178,6 +185,11 @@ td,th{
 td{
     font-family: sans-serif;
     font-size: 15px;
+}
+table{
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
 }
 .icon img{
     width: 50px;
@@ -191,7 +203,6 @@ td{
     color: white;
     font-size: 40px;
     letter-spacing: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 footer{
     position: relative;
@@ -234,6 +245,15 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     }
     .top_menu{
         font-size: 10px !important;
+        position: absolute;
+    }
+    .top_menu ul{
+        right: 0;
+        margin-left: 50px;
+    }
+    .top_menu a{
+        font-size: 10px;
+        float: left;
     }
     nav > ul{
         font-size: 14px;
@@ -275,6 +295,10 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     .top_menu{
         margin-right: -40px;
         color: #2d3a4b;
+    }
+    .top_menu ul{
+        width: 200px;
+        margin-right: 20px;
     }
     .top_menu a{
         font-size: 8px;

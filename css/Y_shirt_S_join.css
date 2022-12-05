@@ -124,6 +124,13 @@ legend{
     height: 2400px !important;
     position: relative;
 }
+.join_icon{
+    float: left;
+    margin-top: 50px;
+    margin-left: 18%;
+    width: 70px;
+    height: 70px;
+}
 .leftmenu{
     position: absolute;
     background-color: #656e7a;
@@ -239,8 +246,6 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin: 0 auto;
         padding: 0;
     }
-    .join{
-    }
     .top_menu{
         font-size: 10px !important;
         position: absolute;
@@ -271,6 +276,15 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-top: 12px;
         margin-left: 5px;
         background: #656e7a;
+    }
+    .leftmenu li a{
+        font-size: 12px;
+    }
+    .join_icon{
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        margin-left: 18%;
     }
  }
 @media (max-width: 767px) {

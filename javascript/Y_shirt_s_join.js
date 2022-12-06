@@ -27,4 +27,7 @@ function sample6_execDaumPostcode() {
             document.getElementById("sample6_detailAddress").focus();
         }
     }).open();
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+      })
 }

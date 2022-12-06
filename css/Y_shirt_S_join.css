@@ -51,7 +51,7 @@ header{
 }
 .top_menu a:hover{
     font-size: 15px;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .hbg{
     display: none;
@@ -104,13 +104,14 @@ nav li{
 nav li a{
     color: #fff;
     background: none !important;
+    transition: .3s;
 }
 nav li a:hover{
     color: beige;
     font-weight: bold;
     font-size: 16px;
     text-decoration: underline;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 fieldset{
     border: 5px solid #656e7a !important;
@@ -147,6 +148,7 @@ legend{
 }
 .leftmenu li a:hover{font-size: 15px;}
 .sigup_list{
+    width: 60%;
     position: absolute;
     margin: 3% 18% 3% 27%;
     border-radius: 15px;
@@ -195,7 +197,6 @@ td{
 }
 table{
     width: 100%;
-    white-space: nowrap;
     text-align: center;
 }
 .icon img{
@@ -241,10 +242,19 @@ footer ul{
 footer p a{color: #000;}
 footer p a:hover{font-weight: bold; text-decoration: underline;}
 footer li a:hover{font-weight: bold; text-decoration: underline;}
-@media (min-width: 768px)  and (max-width: 1200px){
+@media (min-width: 768px)  and (max-width: 1199px){
     *{
         margin: 0 auto;
         padding: 0;
+    }
+    header{
+        height: 70px;
+    }
+    nav{
+        top: 40% !important;
+    }
+    .logo img{
+        height: 70px;
     }
     .top_menu{
         font-size: 10px !important;
@@ -257,6 +267,10 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     .top_menu a{
         font-size: 10px;
         float: left;
+    }
+    .top_menu a:hover{
+        font-size: 11px;
+        color: #fff;
     }
     nav > ul{
         font-size: 14px;
@@ -285,6 +299,25 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         height: 50px;
         margin-top: 50px;
         margin-left: 18%;
+    }
+    .sigup_list label{
+        font-size: 14px;
+    }
+    .sigup_list input{
+        font-size: 12px;
+    }
+    .sigup_list li{
+        font-size: 12px;
+    }
+    textarea{
+        font-size: 12px !important;
+    }
+    tr, th, td{
+        font-size: 12px;
+    }
+    #signup input{
+        height: 60px;
+        font-size: 25px !important;
     }
  }
 @media (max-width: 767px) {
@@ -337,18 +370,21 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: 10px;
         font-weight: normal;
     }
+    .join{
+        height: 2800px !important;
+    }
     .search img{
         width: 20px;
         height: 15px;
-        top: 20px;
-        right: 2px;
+        top: 25px;
+        right: -105px;
     }
     .search1{
         position: relative;
         height: 20px;
-        width: 120px;
+        width: 80%;
         font-size: 8px;
-        margin-left: -10px;
+        margin-left: 10px;
     }
     .fas{
         background: none !important;
@@ -356,9 +392,22 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         color: #fff;
     }
     .sigup_list label{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .sigup_list li{
+        font-size: 10px
+    };
+    .sigup_list input{
+        font-size: 10px    
+    };
+    tr, th, td{
+        font-size: 10px !important;
+    }
+    textarea{
+        font-size: 12px !important;
     }
     #signup input{
-        font-size: 30px;
+        font-size: 20px;
+        height: 60px;
     }
 }   

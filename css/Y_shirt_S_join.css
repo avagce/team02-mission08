@@ -46,7 +46,7 @@ header{
 .top_menu a{
     color: #fff;
     margin-left: 10px;
-    transition: .3s;
+    transition: .2s;
     font-size: 12px;
 }
 .top_menu a:hover{
@@ -104,10 +104,10 @@ nav li{
 nav li a{
     color: #fff;
     background: none !important;
-    transition: .3s;
+    transition: .2s;
 }
 nav li a:hover{
-    color: beige;
+    color: #fff;
     font-weight: bold;
     font-size: 16px;
     text-decoration: underline;
@@ -189,11 +189,9 @@ legend{
 td,th{
     text-align: center !important;
     padding: 10px !important;
-    font-size: 15px;
 }
 td{
     font-family: sans-serif;
-    font-size: 15px;
 }
 table{
     width: 100%;
@@ -291,8 +289,12 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: 5px;
         background: #656e7a;
     }
+    
     .leftmenu li a{
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .leftmenu li a:hover{
+        font-size: 11px;
     }
     .join_icon{
         width: 50px;
@@ -318,6 +320,10 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     #signup input{
         height: 60px;
         font-size: 25px !important;
+    }
+    .icon img{
+        width: 30px;
+        margin: 5px;
     }
  }
 @media (max-width: 767px) {
@@ -370,6 +376,12 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: 10px;
         font-weight: normal;
     }
+    .leftmenu li a{
+        font-size: 10px;
+    }
+    .leftmenu li a:hover{
+        font-size: 11px;
+    }
     .join{
         height: 2800px !important;
     }
@@ -400,14 +412,18 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     .sigup_list input{
         font-size: 10px    
     };
-    tr, th, td{
-        font-size: 10px !important;
+    th{
+        font-size: 10px;
     }
     textarea{
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
     #signup input{
         font-size: 20px;
         height: 60px;
+    }
+    .icon img{
+        width: 30px;
+        margin: 5px;
     }
 }   

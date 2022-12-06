@@ -27,4 +27,14 @@ function sample6_execDaumPostcode() {
             document.getElementById("sample6_detailAddress").focus();
         }
     }).open();
+
+    $("button").click(function(){
+        $("#modal").addClass("active");
+        // #layer과 일치하는 요소에 'active' 클래스를 추가함
+    });
+    // .btn 요소를 클릭하면
+    $(".btn").click(function(){
+        // #layer의 'active' 클래스를 삭제함
+        $("#modal").removeClass("active")
+    });
 }

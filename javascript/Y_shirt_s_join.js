@@ -30,4 +30,6 @@ function sample6_execDaumPostcode() {
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').focus()
       })
+
+      
 }

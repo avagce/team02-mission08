@@ -10,9 +10,21 @@
     <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="../javascript/jquery-2.2.4.min.js"></script>
+    <script src="../javascript/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="../javascript/Y_shirt_s_join.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+        if($(this).scrollTop()> $(".top_menu").height()){
+            $("#top img").addClass("on")
+        }else{
+            $("#top img").removeClass("on")
+        }
+    })
+        })
+    </script>
 
 </head>
 <body>
@@ -339,6 +351,9 @@
                     <li id="signup"><input class="btn btn-primary" type="submit" value="동의하고 회원가입"></li>
                 </fieldset>
             </form>
+            <a href="#" id="top">
+                <img src="../resources/images/yys_top_icon.svg" alt="맨위로">
+            </a>
         </div>
         <footer class="hidden-xs">
                 <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>

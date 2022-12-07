@@ -48,6 +48,7 @@ function passwordcheck() {
     alert("비밀번호를 6글자이상 입력해주세요.");
     return false;
   }
+
   if (p1 != p2) {
     alert("비밀번호가 일치하지 않습니다");
     return false;

@@ -3,18 +3,18 @@
 /* 폰트 ttf 적용 */
 @font-face {
   font-family: "NEO";
-  src: url("/resources/images/NanumSquareNeo-bRg.ttf") format("truetype");
+  src: url("../resources/images/NanumSquareNeo-bRg.ttf") format("truetype");
 }
 @font-face {
   font-family: "Luxerie";
-  src: url("/resources/images/Luxerie.ttf") format("truetype");
+  src: url("../resources/images/Luxerie.ttf") format("truetype");
 }
 * {
   font-family: "NEO";
   margin: 0 auto;
 }
 header {
-  background: url(/resources/images/kmj_header.jpg);
+  background: url(../resources/images/kmj_header.jpg);
   text-align: center;
   height: 400px;
   width: auto;
@@ -227,11 +227,11 @@ footer div a {
 }
 
 footer .insta {
-  background: url(/resources/images/kmj_ins.svg) 0 0 no-repeat;
+  background: url(../resources/images/kmj_ins.svg) 0 0 no-repeat;
 }
 footer .youtube {
-  background: url(/resources/images/kmj_youtube.svg) 0 0 no-repeat;
+  background: url(../resources/images/kmj_youtube.svg) 0 0 no-repeat;
 }
 footer .twitter {
-  background: url(/resources/images/kmj_twitter.svg) 0 0 no-repeat;
+  background: url(../resources/images/kmj_twitter.svg) 0 0 no-repeat;
 }

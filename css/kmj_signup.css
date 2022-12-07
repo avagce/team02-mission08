@@ -3,11 +3,11 @@
 /* 폰트 ttf 적용 */
 @font-face {
   font-family: "NEO";
-  src: url("/NanumSquareNeo-bRg.ttf") format("truetype");
+  src: url("/resources/images/NanumSquareNeo-bRg.ttf") format("truetype");
 }
 @font-face {
   font-family: "Luxerie";
-  src: url("/Luxerie.ttf") format("truetype");
+  src: url("/resources/images/Luxerie.ttf") format("truetype");
 }
 * {
   font-family: "NEO";

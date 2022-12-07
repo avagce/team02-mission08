@@ -60,7 +60,7 @@ header{
     margin-top: 18px;
     margin-right: 20px;
 }
-.sigup_list strong{
+.signup_list strong{
     color: #F45D5C;
 }
 .search{
@@ -147,7 +147,7 @@ legend{
     padding-left: 5px;
 }
 .leftmenu li a:hover{font-size: 15px;}
-.sigup_list{
+.signup_list{
     width: 60%;
     position: absolute;
     margin: 3% 18% 3% 27%;
@@ -155,20 +155,20 @@ legend{
     padding: 70px;
     background: white;
 }
-.sigup_list label{
+.signup_list label{
     display: block;
     margin: 5px;
     font-size: 22px;
 }
-.sigup_list input{
+.signup_list input{
     display: inline;
     font-family: "맑은 고딕";
 }
-.sigup_list select{
+.signup_list select{
     display: inline;
     font-family: "맑은 고딕";
 }
-.sigup_list option{
+.signup_list option{
     font-family: "맑은 고딕";
 }
 .button{
@@ -318,13 +318,13 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-top: 50px;
         margin-left: 18%;
     }
-    .sigup_list label{
+    .signup_list label{
         font-size: 14px;
     }
-    .sigup_list input{
+    .signup_list input{
         font-size: 12px;
     }
-    .sigup_list li{
+    .signup_list li{
         font-size: 12px;
     }
     textarea{
@@ -419,18 +419,18 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         border: none !important;
         color: #fff;
     }
-    .sigup_list{
+    .signup_list{
         width: 80%;
         padding: 30px;
         margin: 6% 10% 3% 10%;
     }
-    .sigup_list label{
+    .signup_list label{
         font-size: 14px;
     }
-    .sigup_list li{
+    .signup_list li{
         font-size: 10px
     };
-    .sigup_list input{
+    .signup_list input{
         font-size: 10px    
     };
     th{

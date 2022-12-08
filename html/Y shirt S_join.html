@@ -15,15 +15,7 @@
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script src="../javascript/Y_shirt_s_join.js"></script>
     <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-        if($(this).scrollTop()> $(".top_menu").height()){
-            $("#top img").addClass("on")
-        }else{
-            $("#top img").removeClass("on")
-        }
-    })
-        })
+       
     </script>
 
 </head>
@@ -59,7 +51,7 @@
                     <li class="active text-capitalize"><a href="#" title="악세사리">acc</a></li>
                     <li class="active text-capitalize"><a href="#" title="고객센터">c/s</a></li>
                     <li class="search">
-                        <input class="search1 visible-lg visible-xs" type="search" title="검색어입력" placeholder="검색">
+                        <input class="search1 visible-lg visible-xs form-control" type="search" title="검색어입력" placeholder="검색">
                         <img class="visible-lg visible-xs" src="../resources/images/yys_search_icon.svg" alt="검색아이콘">
                     </li>
                     <li>
@@ -76,7 +68,7 @@
                     <h4 class="modal-title" id="myModalLabel">검색어를 입력해주세요</h4>
                     </div>
                     <div class="modal-body">
-                    <input class="form-control" type="text" value="검색창">
+                    <input class="form-control" type="text" placeholder="검색어입력">
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
@@ -168,7 +160,7 @@
                         <input class="form-control" type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" id="button" class="button" style="width: 120px;"><br>
                         <input class="form-control" type="text" id="sample6_address" placeholder="주소" style="margin-top: 5px; width: 200px;" required >
                         <input class="form-control" type="text" id="sample6_extraAddress" placeholder="참고항목" style="margin-top: 5px; width: 200px;"><br>
-                        <input class="form-control" type="text" id="sample6_detailAddress" placeholder="상세주소" style="width: 22vw; margin-top: 5px; width: 100%;" required><hr>
+                        <input class="form-control" type="text" id="sample6_detailAddress" placeholder="상세주소" style="width: 22vw; margin-top: 5px; width: 50%;" required><hr>
                     </li>
                     <li>
                         <label>이용약관 동의 <span style="color: red;">(필수)</span> <input type="checkbox" style="right: 5%;" required></label>

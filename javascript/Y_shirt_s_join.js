@@ -26,5 +26,19 @@ function sample6_execDaumPostcode() {
             document.getElementById("sample6_address").value = addr;
             document.getElementById("sample6_detailAddress").focus();
         }
+        // 부트스트랩 modal속성 구성
     }).open();
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+      })      
 }
+// scrollTop속성 적용하여 .top_menu에서 떠났을 때, on 클래스 추가, .top_menu에 돌아왔을 때, on 클래스 제거
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop()> $(".top_menu").height()){
+            $("#top img").addClass("on")
+        }else{
+            $("#top img").removeClass("on")
+        }
+    })
+})

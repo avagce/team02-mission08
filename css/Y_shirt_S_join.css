@@ -46,12 +46,14 @@ header{
 .top_menu a{
     color: #fff;
     margin-left: 10px;
-    transition: .3s;
+    transition: .2s;
     font-size: 12px;
 }
 .top_menu a:hover{
-    font-size: 15px;
-    transform: scale(1.2);
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transform: scale(1.1);
 }
 .hbg{
     display: none;
@@ -60,7 +62,13 @@ header{
     margin-top: 18px;
     margin-right: 20px;
 }
-.sigup_list strong{
+.agch{
+    color: blue;
+}
+.agtx{
+    color: gray;
+}
+.signup_list strong{
     color: #F45D5C;
 }
 .search{
@@ -74,8 +82,8 @@ header{
 }
 .search img{
     position: absolute;
-    width: 20px;
-    height: 22px;
+    width: 25px;
+    height: 29px;
     right: 10px;
     top: 13px;
     border-left: 1px solid rgba(0, 0, 0, 0.5);
@@ -86,7 +94,7 @@ header{
 .search1{
     height: 27px;
     border-radius: 10px;
-    width: 150px;
+    width: 50px;
     color: #000;
 }
 nav{
@@ -104,13 +112,13 @@ nav li{
 nav li a{
     color: #fff;
     background: none !important;
+    transition: .2s;
 }
 nav li a:hover{
-    color: beige;
+    color: #fff;
     font-weight: bold;
-    font-size: 16px;
-    text-decoration: underline;
-    transform: scale(1.2);
+    font-size: 18px;
+    transform: scale(1.1);
 }
 fieldset{
     border: 5px solid #656e7a !important;
@@ -146,27 +154,28 @@ legend{
     padding-left: 5px;
 }
 .leftmenu li a:hover{font-size: 15px;}
-.sigup_list{
+.signup_list{
+    width: 60%;
     position: absolute;
     margin: 3% 18% 3% 27%;
     border-radius: 15px;
     padding: 70px;
     background: white;
 }
-.sigup_list label{
+.signup_list label{
     display: block;
     margin: 5px;
     font-size: 22px;
 }
-.sigup_list input{
+.signup_list input{
     display: inline;
     font-family: "맑은 고딕";
 }
-.sigup_list select{
+.signup_list select{
     display: inline;
     font-family: "맑은 고딕";
 }
-.sigup_list option{
+.signup_list option{
     font-family: "맑은 고딕";
 }
 .button{
@@ -187,20 +196,31 @@ legend{
 td,th{
     text-align: center !important;
     padding: 10px !important;
-    font-size: 15px;
 }
 td{
     font-family: sans-serif;
-    font-size: 15px;
 }
 table{
     width: 100%;
-    white-space: nowrap;
     text-align: center;
 }
 .icon img{
     width: 50px;
     margin: 5px;
+}
+.icon img:hover{
+    opacity: 0.5;
+}
+#top img{
+    width: 40px;
+    display: none;
+}
+#top .on{
+    position: fixed;
+    display: block;
+    left: 93%;
+    top: 90%;
+    z-index: 10;
 }
 #signup input{
     width: 100%;
@@ -217,6 +237,19 @@ footer{
     width: 100%;
     height: 115px;
     bottom: 0px;
+}
+.uptitle{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
 }
 footer p{
     text-align: center;
@@ -241,10 +274,19 @@ footer ul{
 footer p a{color: #000;}
 footer p a:hover{font-weight: bold; text-decoration: underline;}
 footer li a:hover{font-weight: bold; text-decoration: underline;}
-@media (min-width: 768px)  and (max-width: 1200px){
+@media (min-width: 768px)  and (max-width: 1199px){
     *{
         margin: 0 auto;
         padding: 0;
+    }
+    header{
+        height: 70px;
+    }
+    nav{
+        top: 40% !important;
+    }
+    .logo img{
+        height: 70px;
     }
     .top_menu{
         font-size: 10px !important;
@@ -257,6 +299,10 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     .top_menu a{
         font-size: 10px;
         float: left;
+    }
+    .top_menu a:hover{
+        font-size: 11px;
+        color: #fff;
     }
     nav > ul{
         font-size: 14px;
@@ -277,14 +323,49 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: 5px;
         background: #656e7a;
     }
+    
     .leftmenu li a{
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .leftmenu li a:hover{
+        font-size: 11px;
     }
     .join_icon{
         width: 50px;
         height: 50px;
         margin-top: 50px;
         margin-left: 18%;
+    }
+    .signup_list label{
+        font-size: 14px;
+    }
+    .signup_list input{
+        font-size: 12px;
+    }
+    .signup_list li{
+        font-size: 12px;
+    }
+    .agch{
+        color: blue;
+        font-size: 13px;
+    }
+    .agtx{
+        color: gray;
+        font-size: 12px;
+    }
+    textarea{
+        font-size: 12px !important;
+    }
+    tr, th, td{
+        font-size: 12px;
+    }
+    #signup input{
+        height: 60px;
+        font-size: 25px !important;
+    }
+    .icon img{
+        width: 30px;
+        margin: 5px;
     }
  }
 @media (max-width: 767px) {
@@ -309,13 +390,17 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         color: #2d3a4b;
     }
     .top_menu ul{
-        width: 200px;
+        width: 300px;
         margin-right: 20px;
     }
     .top_menu a{
         font-size: 8px;
         margin-left: 5px;
         line-height: 50px;
+    }
+    .top_menu a:hover{
+        font-size: 11px;
+        color: #fff;
     }
     nav li a{
         background-color: none !important;
@@ -337,28 +422,73 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: 10px;
         font-weight: normal;
     }
+    .leftmenu li a{
+        font-size: 10px;
+    }
+    .leftmenu li a:hover{
+        font-size: 11px;
+    }
+    .join{
+        height: 2200px !important;
+    }
     .search img{
         width: 20px;
         height: 15px;
-        top: 20px;
-        right: 2px;
+        top: 35px;
+        right: -120px;
     }
     .search1{
         position: relative;
-        height: 20px;
-        width: 120px;
+        height: 20px !important;
         font-size: 8px;
-        margin-left: -10px;
+        margin-left: 10px;
+        width: 132px !important;
+        margin-top: 10px !important;
+        margin-bottom: 5px !important;
+    
     }
     .fas{
         background: none !important;
         border: none !important;
         color: #fff;
     }
-    .sigup_list label{
-        font-size: 16px;
+    legend{
+        font-size: 18px !important;
+        width: 125px !important;
+    }
+    .signup_list{
+        width: 80%;
+        padding: 30px;
+        margin: 6% 10% 3% 10%;
+    }
+    .signup_list label{
+        font-size: 14px;
+    }
+    .signup_list li{
+        font-size: 10px
+    };
+    .signup_list input{
+        font-size: 10px    
+    };
+    .agch{
+        color: blue;
+        font-size: 11px !important;
+    }
+    .agtx{
+        font-size: 10px;
+    }
+    th{
+        font-size: 10px;
+    }
+    textarea{
+        font-size: 10px !important;
     }
     #signup input{
-        font-size: 30px;
+        font-size: 20px;
+        height: 60px;
+    }
+    .icon img{
+        width: 30px;
+        margin: 5px;
     }
 }   

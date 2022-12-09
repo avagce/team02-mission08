@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pet Shop</title>
+    <link rel="stylesheet" href="../css/signup_nayoung.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker3.css">
+    <script src="../javascript/jquery-3.3.1.js"></script>
+    <script src="../javascript/bootstrap_nayoung.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
+    <script src="../javascript/bootstrap_nayoung.js"></script>
+    <script src="https://kit.fontawesome.com/05eac13e8d.js" crossorigin="anonymous"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+      //본 예제에서는 도로명 주소 표기 방식에 대한 법령에 따라, 내려오는 데이터를 조합하여 올바른 주소를 구성하는 방법을 설명합니다.
+      function sample4_execDaumPostcode() {
+          new daum.Postcode({
+              onComplete: function(data) {
+                  // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+  
+                  // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+                  // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                  var roadAddr = data.roadAddress; // 도로명 주소 변수
+                  var extraRoadAddr = ''; // 참고 항목 변수
+  
+                  // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                  // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                  if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                      extraRoadAddr += data.bname;
+                  }
+                  // 건물명이 있고, 공동주택일 경우 추가한다.
+                  if(data.buildingName !== '' && data.apartment === 'Y'){
+                     extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                  }
+                  // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                  if(extraRoadAddr !== ''){
+                      extraRoadAddr = ' (' + extraRoadAddr + ')';
+                  }
+  
+                  // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                  document.getElementById('sample4_postcode').value = data.zonecode; document.getElementById("sample4_roadAddress").value = roadAddr; document.getElementById("sample4_jibunAddress").value = data.jibunAddress; 
+                  
+                  // 참고항목 문자열이 있을 경우 해당 필드에 넣는다.
+                  if(roadAddr !== ''){
+                      document.getElementById("sample4_extraAddress").value = extraRoadAddr;
+                  } else {
+                      document.getElementById("sample4_extraAddress").value = '';
+                  }
+  
+                  var guideTextBox = document.getElementById("guide");
+                  // 사용자가 '선택 안함'을 클릭한 경우, 예상 주소라는 표시를 해준다.
+                  if(data.autoRoadAddress) {
+                      var expRoadAddr = data.autoRoadAddress + extraRoadAddr;
+                      guideTextBox.innerHTML = '(예상 도로명 주소 : ' + expRoadAddr + ')';
+                      guideTextBox.style.display = 'block';
+  
+                  } else if(data.autoJibunAddress) {
+                      var expJibunAddr = data.autoJibunAddress;
+                      guideTextBox.innerHTML = '(예상 지번 주소 : ' + expJibunAddr + ')';
+                      guideTextBox.style.display = 'block';
+                  } else {
+                      guideTextBox.innerHTML = '';
+                      guideTextBox.style.display = 'none';
+                  }
+              }
+          }).open({
+            autoClose: true //기본값 true
+          });
+      }
+  
+      const handlePress = (e) => {
+      const regex = /^[0-9\b -]{0,13}$/;
+      if (regex.test(e.target.value)) {
+        setInputValue(e.target.value);
+      }
+    }
+    function test() {
+        var p1 = document.getElementById('pw').value;
+        var p2 = document.getElementById('cf_pw').value;
+        if( p1 != p2 ) {
+          alert("비밀번호가 일치 하지 않습니다");
+          return false;
+        } else{
+          alert("비밀번호가 일치합니다");
+          return true;
+        }
+  
+      }
+  </script>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img alt="Brand" src="../resources/images/logo_nayoung.svg" class="img">
+            </a>
+            <p class="maintitle">
+            Digital Pet Shop
+            </p>
+          </div>
+          
+        </div>
+      </nav>
+      <ul class="nav nav-tabs nav-justified">
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            게임소개 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">스토리</a></li>
+            <li><a href="#">캐릭터</a></li>
+            <li><a href="#">회사소개</a></li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            게시판 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">패치노트</a></li>
+            <li><a href="#">자유게시판</a></li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            이벤트 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">진행중인 이벤트</a></li>
+            <li><a href="#">종료된 이벤트</a></li>
+            <li><a href="#">다가오는 이벤트</a></li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            마이페이지 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">회원정보</a></li>
+            <li><a href="#">정보변경</a></li>
+            <li><a href="#">고객문의</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </header>
+    <div id="bodywrap">
+      <div class="container">
+        <div class="content_area">
+          <h1 class="join">회원 가입</h1>
+          <p class="us">
+              안녕하세요! 디지털 펫샵에 오신걸 환영해요:) <br>
+              귀여운 펫을 분양 받기 위해서는 분양받으시는 분의 정보가 필요하답니다 <br>
+              아래의 입양신청서를 작성해주세요!
+          </p>
+          <form action="" mathod="">
+          <fieldset style="border:0 solid black">
+              <legend>입양 신청서</legend>
+              <br><br><br>
+              <div class="information">
+              <div class="text">
+              <p class="id">
+                <label for="id"><h3 class="self">아이디 </h3></label>
+                <input required="required" type="text" placeholder="" class="blank under" id="id">
+              </p>
+              <br>
+              <p><label for="pw"><h3 class="self">비밀번호</h3> </label><input required="required" placeholder="" type="password" id="pw" class="blank under"></p>
+              <br>
+              <p><label for="cf_pw"><h3 class="self">비밀번호 확인</h3></label> <input placeholder="" required="required" type="password" id="cf_pw" class="blank under"></p>
+              <br>
+              <p><label for="email"><h3 class="self">이메일 </h3></label><input required="required" placeholder="" type="text" class="blank half" id="email">@<select id="address">
+                  <option>naver.com</option>
+                  <option>daum.net</option>
+                  <option>gmail.com</option>
+              </select>
+              <br>
+              <p><h3 class="self">연락처 </h3><input type="text" id="phoneNum" maxlength="13" required class="blank under">
+                <br>
+                  <script>
+                      var autoHypenPhone = function(str){
+str = str.replace(/[^0-9]/g, '');
+var tmp = '';
+if( str.length < 4){
+    return str;
+}else if(str.length < 7){
+    tmp += str.substr(0, 3);
+    tmp += '-';
+    tmp += str.substr(3);
+    return tmp;
+}else if(str.length < 11){
+    tmp += str.substr(0, 3);
+    tmp += '-';
+    tmp += str.substr(3, 3);
+    tmp += '-';
+    tmp += str.substr(6);
+    return tmp;
+}else{              
+    tmp += str.substr(0, 3);
+    tmp += '-';
+    tmp += str.substr(3, 4);
+    tmp += '-';
+    tmp += str.substr(7);
+    return tmp;
+}
+
+return str;
+}
+
+
+var phoneNum = document.getElementById('phoneNum');
+
+phoneNum.onkeyup = function(){
+console.log(this.value);
+this.value = autoHypenPhone( this.value ) ;  
+}
+                  </script>
+                  
+              <p><h3 class="self">주소</h3>
+                  <input required="required" type="text" id="sample4_postcode" class="ad_text" placeholder="우편번호" disabled>
+                  <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" class="adsr"><br>
+                  <input required="required" type="text" id="sample4_roadAddress" placeholder="도로명주소" class="ad_text ad_blank">
+                  <input type="text" required="required" id="sample4_jibunAddress" placeholder="지번주소" class="ad_text ad_blank">
+                  <span id="guide" style="color:#999;display:none"></span>
+                  <br>
+                  <input type="text" id="sample4_detailAddress" placeholder="상세주소" class="ad_text ad_blank" required="required">
+                  <input type="text" id="sample4_extraAddress" placeholder="참고항목" class="ad_text ad_blank" >
+              </p>
+              </div>
+              <br>
+              <div class="whoiam">
+              <h2>나는 누구일까요?</h2>
+              <br>
+              <p>
+                  <h3 class="self">제 생일은 </h3><input class="blank" type="date" id="birthday"><h3 class="self">이에요!</h3>
+              </p>
+              <br>
+              <p>
+                  <h3 class="self">저는</h3>
+                  여자<input type="radio" name="receive" checked="checked">
+                    남자<input type="radio" name="receive" >
+                  <h3 class="self">입니다.</h3>
+              </p>
+              <br>
+              <p>
+                  <h3 class="self">저는</h3>
+                  <select>
+                      <option>선택하기</option>
+                      <option>조용한</option>
+                      <option>활발한</option>
+                      <option>엉뚱한</option>
+                  </select>
+                  <h3 class="self">성격이에요</h3>
+                  
+              </p>
+              <br>
+              <p>
+                  <h3 class="self">저는</h3>
+                  <select>
+                      <option>선택하기</option>
+                      <option>토끼</option>
+                      <option>다람쥐</option>
+                      <option>강아지</option>
+                      <option>고슴도치</option>
+                      <option>햄스터</option>
+                      <option>고양이</option>
+                  </select>
+                  <h3 class="self"> 가장 좋아해요</h3>
+              </p>
+              <br>
+              <p>
+                  <h3 class="self">제 친구는</h3>
+                  <select>
+                      <option>선택하기</option>
+                      <option>말을 잘했으면</option>
+                      <option>운동을 좋아했으면</option>
+                      <option>공감을 잘해줬으면</option>
+                  </select>
+                  <h3 class="self">좋겠어요</h3>
+              </p>
+              <div><button class="bt" type="submit" onclick="test()">가입하기</button></div>
+          </div>
+              
+              </div>
+          </fieldset>
+      </form>
+      </div>
+  </div>
+      <footer>
+        <a href="about_tubular_nayoung.html"><p class="footer">펫 보러가기<i class="fa-brands fa-youtube"></i></p></a>
+      </footer>
+</body>
+</html>

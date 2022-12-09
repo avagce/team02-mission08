@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+*{
+    font-family: 'Stylish', sans-serif;
+}
+
+.dropdown-menu{
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.dropdown-menu li a {
+    font-size: 23px !important;
+    margin: 10px;
+}
+
+.dropdown-toggle{
+    font-size: 25px;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+.container-fluid{
+    min-height: 130px;
+}
+
+.navbar{
+    margin-bottom: 0px !important;
+}
+
+h1{
+    font-size: 36px;
+    margin: 48px 0px !important;
+}
+
+p.introduction{
+    font-size: 30px !important;
+} 
+
+.navbar-header{
+    position: relative;
+    height: 130px;
+}
+
+.maintitle{
+    float: left;
+    font-size: 50px;
+    overflow: hidden;
+    line-height: 130px;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+    line-height: 10vh;
+    background-color: aliceblue;
+}
+
+.footer{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+.footer:hover{
+    color: #666;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+input#yy.form-control{
+    width: 15%;
+    float: left;
+}
+
+input#dd.form-control{
+    width: 12%;
+    float: left;
+}
+
+select#mm.form-select{
+    float: left;
+    width: 10%;
+    height: 34px;
+    line-height: 34px;
+}
+
+label.form-label.mt-4{
+    float: left;
+    /* height: 34px;
+    line-height: 34px; */
+    margin-left: 7px;
+    margin-right: 12px;
+}
+
+.birth{
+    height: 34px;
+    line-height: 34px;
+}
+
+select#exampleSelect1.form-select{
+    height: 34px;
+    line-height: 34px;
+}
+
+.container {
+    justify-content: space-around;
+    background-image:url(image/sky2.jpg);
+    background-size: cover; 
+    height: 150vh;
+    width: 1920px;
+    position: relative;
+    
+}
+
+div.container{
+    position: relative;
+}
+
+.sub_list {
+    background-image: url(image/sdcn.png);
+    background-size: 310px 151vh;
+    background-repeat: no-repeat;
+    background-position: 0 -7px;
+    min-width: 300px;
+    position: absolute;
+    height: 150vh;
+    margin-left: 100px;
+    border-radius: 20px;
+    
+
+}
+.footer {
+    height: 100%;
+    width: 100%;
+    background-color: paleturquoise;
+}
+
+
+.content_area p {
+    float: left;
+}
+.scroll {
+    position: absolute;
+    top: 213px;
+    left: 143px;
+    width: 968px;
+}
+
+.text {
+    position: absolute;
+    top: 8px;
+}
+h3.self {
+    display: inline;
+}
+legend {
+    text-align: center;
+    font-size: 60px;
+}
+
+fieldset {
+    width: 550px;
+    height: 762px;
+    position: absolute;
+    top: 417px;
+    left: 273px;
+    
+    
+}
+
+input.blank{
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    font-size: 25px;
+
+}
+.under {
+    width:125px
+}
+.join{
+    position: absolute;
+    left: 50px;
+    font-size: 55px;
+    font-weight: normal;
+    top: 21px;
+    margin: 20px;
+}
+.us {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    font-size: 30px;
+    margin: 20px;
+}
+input.blank.half{
+    width: 100px;
+    font-size: 25px;
+}
+.information{
+    font-size: 30px;
+    padding-left: 60px;
+}
+select {
+    width: 160px;
+    height: 36px;
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-bottom: 1px solid black;
+
+}
+.whoiam {
+    position: absolute;
+    top: 359px;
+    font-size: 25px;
+}
+#birthday{
+    width: 130px;
+    height: 24px;
+    font-size: 25px;
+}
+.bt {
+    position: absolute;
+    top: 300px;
+    left: 291px;
+    font-size: 43px;
+    border: none;
+    background: none;
+    text-decoration: underline 1px;
+    width: 150px;
+}
+.menu2 {
+    width: 297px;
+    height: 99px;
+    line-height: 99px;
+    text-align: center;
+    /* border: 1px solid; */
+    border-radius: 20px;
+    font-size: 30px;
+    margin: 3px;
+    background-image:url(image/sidemenu-removebg-preview.png);
+    background-size: 300px 120px;
+    background-repeat: no-repeat;
+    background-position: -5px -10px;
+    position: relative;
+    top: 25px;
+}
+.mm {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+.ad_text{
+    width: 150px;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    background: none;
+    text-align: center;
+    font-size: 25px;
+}
+.adsr{
+    width: 120px;
+    height: 25px;
+    font-size: 20px;
+    position: absolute;
+    top: 236px;
+    left: 222px;
+}
+a.sb{
+    color: black;
+}
+
+.ad_blank {
+    width: 215px;
+}
+
+div#wrap{
+    position: relative;
+}
+
+/* 미디어 쿼리를 사용해 모바일 화면에서의 크기구현 */
+@media (max-width: 768px) {
+    fieldset{
+        width: 509px;
+        height: 762px;
+        position: absolute;
+        top: 417px;
+        left: 125px; 
+    }
+  }

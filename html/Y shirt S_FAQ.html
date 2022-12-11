@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Y_shirt_S_join.css">
+    <title>Y shirt S Join</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../javascript/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="../javascript/Y_shirt_s_join.js"></script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="logo">
+                <a href="#" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"></a>
+            </div>
+            <div class="top_menu">
+                <ul>
+                    <li><a href="#" title="홈">홈</a></li>
+                    <li><a href="#" title="게시판">게시판</a></li>
+                    <li><a href="#" title="로그인">로그인</a></li>
+                    <li><a href="#" title="회원가입">회원가입</a></li>
+                </ul>
+            </div>
+            <a href="#">
+                <!-- fontawesom 사용 -->
+                <!-- bootstrap 사용하여 큰화면 데스크탑 화면에서 보이지 않도록 hidden-lg적용 -->
+                <!-- 뷰포트가 좁을 때 nav가 보여지지 않도록 navbar-toggle collapsed적용 -->
+                <!-- 뷰포트가 좁을 때 처음 #bsnavidar가 숨겨질 수 있도록 data-toggle="collapse"을 적용, fontawesom 이미지가 클릭했을 때 data-target의 메뉴가 toggle할 수 있도록 id값을 알맞게 설정 -->
+                <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
+            </a>
+            <!-- id값을 동일하게 bsnavibar 적용 -->
+            <nav class="collapse navbar-collapse visible-xs" id="bsnavibar">
+                <ul class="nav navbar-nav">
+                    <li class="active text-capitalize"><a href="#" title="Best">best</a></li>
+                    <li class="active text-capitalize"><a href="#" title="상의">shirts</a></li>
+                    <li class="active text-capitalize"><a href="#" title="하의">bottom</a></li>
+                    <li class="active text-capitalize"><a href="#" title="자켓">outer</a></li>
+                    <li class="active text-capitalize"><a href="#" title="신발">shoes</a></li>
+                    <li class="active text-capitalize"><a href="#" title="악세사리">acc</a></li>
+                    <li class="active text-capitalize"><a href="#" title="고객센터">c/s</a></li>
+                    <li class="search">
+                        <input class="search1 visible-lg visible-xs form-control" type="search" title="검색어입력" placeholder="검색">
+                        <img class="visible-lg visible-xs" src="../resources/images/yys_search_icon.svg" alt="검색아이콘">
+                    </li>
+                    <li>
+                        <input class="search2 visible-sm visible-md" type="button" value="검색" title="검색" data-toggle="modal" data-target="#myModal">    
+                    </li>
+                </ul>
+            </nav>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">검색어를 입력해주세요</h4>
+                    </div>
+                    <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="검색어입력">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-primary">검색</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <div class="join">
+            <div class="leftmenu hidden-xs">
+                <li><a href="#" title="게시판">NOTICE</a><hr></li>
+                <li><a href="#" title="자주 묻는 질문">FAQ</a><hr></li>
+                <li><a href="#" title="1:1상담">Q&A</a><hr></li>
+                <li><a href="#" title="이벤트">EVENT</a><hr></li>
+                <li><a href="#" title="리뷰">REVIEW</a><hr></li>
+                <li><a href="#" title="고객센터">C/S</a><hr></li>
+            </div>
+        </div>
+        <div class="FAQLT">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Collapsible Group Item #1
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+            <a href="#" id="top">
+                <img src="../resources/images/yys_top_icon.svg" alt="맨위로">
+            </a>
+        <footer class="hidden-xs">
+                <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
+                | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221111@gmail.com) <br>
+                &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
+                <a href="#"> 개인정보 처리방침 |</a>
+                <a href="#"> 이용약관 |</a>
+                고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
+                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
+                <ul>
+                    <li><a href="#">고객센터 |</a></li>
+                    <li><a href="#">개인정보처리방침 |</a></li>
+                    <li><a href="#">1:1문의 |</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+        </footer>
+    </div>
+</body>
+</html>

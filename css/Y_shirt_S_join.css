@@ -142,7 +142,7 @@ legend{
 .leftmenu{
     position: absolute;
     background-color: #656e7a;
-    width: 13%;
+    width: 10%;
     height: 1000px;
     padding-top: 20px;
     padding-left: 10px;
@@ -154,62 +154,9 @@ legend{
     padding-left: 5px;
 }
 .leftmenu li a:hover{font-size: 15px;}
-.signup_list{
-    width: 60%;
-    position: absolute;
-    margin: 3% 18% 3% 27%;
-    border-radius: 15px;
-    padding: 70px;
-    background: white;
-}
-.signup_list label{
-    display: block;
-    margin: 5px;
-    font-size: 22px;
-}
-.signup_list input{
-    display: inline;
-    font-family: "맑은 고딕";
-}
-.signup_list select{
-    display: inline;
-    font-family: "맑은 고딕";
-}
-.signup_list option{
-    font-family: "맑은 고딕";
-}
-.button{
-    background-color: beige;
-    color: #000 ;
-    border-radius: 10px;
-    border: none;
-    padding: 0 5px;
-    height: 26px;
-}
-.button:hover{
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-#textarea{width:100%;}
-td,th{
-    text-align: center !important;
-    padding: 10px !important;
-}
-td{
-    font-family: sans-serif;
-}
-table{
-    width: 100%;
-    text-align: center;
-}
-.icon img{
-    width: 50px;
-    margin: 5px;
-}
-.icon img:hover{
-    opacity: 0.5;
+.FAQLT{
+    width: 80%;
+    padding: 3% 5% 3% 15%;
 }
 #top img{
     width: 40px;
@@ -222,13 +169,6 @@ table{
     top: 90%;
     z-index: 10;
 }
-#signup input{
-    width: 100%;
-    height: 100px;
-    border-radius: 20px;
-    font-size: 40px;
-    letter-spacing: 10px;
-}
 footer{
     position: relative;
     padding: 10px;
@@ -237,19 +177,6 @@ footer{
     width: 100%;
     height: 115px;
     bottom: 0px;
-}
-.uptitle{
-    margin-top: 30px;
-    text-align: center;
-    line-height: 16px;
-    font-size: 20px;
-    font-weight: bold;
-}
-.upbody{
-    padding: 30px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 30px;
 }
 footer p{
     text-align: center;

@@ -62,15 +62,6 @@ header{
     margin-top: 18px;
     margin-right: 20px;
 }
-.agch{
-    color: blue;
-}
-.agtx{
-    color: gray;
-}
-.signup_list strong{
-    color: #F45D5C;
-}
 .search{
     position: absolute;
     padding-top: 10px;
@@ -120,24 +111,28 @@ nav li a:hover{
     font-size: 18px;
     transform: scale(1.1);
 }
-fieldset{
-    border: 5px solid #656e7a !important;
-}
-legend{
-    text-align: center;
-    width: 150px !important; 
-    border: none !important;
-} 
-.join{
+.FAQ{
     height: 1500px !important;
     position: relative;
 }
-.join_icon{
-    float: left;
-    margin-top: 50px;
-    margin-left: 18%;
-    width: 70px;
-    height: 70px;
+.FAQ_menu{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-left: 5%;
+    margin-top: 20px;
+}
+.FAQ_submenu ul{
+    margin-left: 5%;
+}
+.FAQ_submenu li{
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.FAQ_submenu a{
+    color: #000;
 }
 .leftmenu{
     position: absolute;
@@ -156,7 +151,7 @@ legend{
 .leftmenu li a:hover{font-size: 15px;}
 .FAQLT{
     width: 80%;
-    padding: 3% 5% 3% 15%;
+    padding: 15% 1% 3% 11%;
 }
 #top img{
     width: 40px;
@@ -257,43 +252,6 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     .leftmenu li a:hover{
         font-size: 11px;
     }
-    .join_icon{
-        width: 50px;
-        height: 50px;
-        margin-top: 50px;
-        margin-left: 18%;
-    }
-    .signup_list label{
-        font-size: 14px;
-    }
-    .signup_list input{
-        font-size: 12px;
-    }
-    .signup_list li{
-        font-size: 12px;
-    }
-    .agch{
-        color: blue;
-        font-size: 13px;
-    }
-    .agtx{
-        color: gray;
-        font-size: 12px;
-    }
-    textarea{
-        font-size: 12px !important;
-    }
-    tr, th, td{
-        font-size: 12px;
-    }
-    #signup input{
-        height: 60px;
-        font-size: 25px !important;
-    }
-    .icon img{
-        width: 30px;
-        margin: 5px;
-    }
  }
 @media (max-width: 767px) {
     *{
@@ -355,7 +313,7 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     .leftmenu li a:hover{
         font-size: 11px;
     }
-    .join{
+    .FAQ{
         height: 2200px !important;
     }
     .search img{
@@ -378,44 +336,5 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         background: none !important;
         border: none !important;
         color: #fff;
-    }
-    legend{
-        font-size: 18px !important;
-        width: 125px !important;
-    }
-    .signup_list{
-        width: 80%;
-        padding: 30px;
-        margin: 6% 10% 3% 10%;
-    }
-    .signup_list label{
-        font-size: 14px;
-    }
-    .signup_list li{
-        font-size: 10px
-    };
-    .signup_list input{
-        font-size: 10px    
-    };
-    .agch{
-        color: blue;
-        font-size: 11px !important;
-    }
-    .agtx{
-        font-size: 10px;
-    }
-    th{
-        font-size: 10px;
-    }
-    textarea{
-        font-size: 10px !important;
-    }
-    #signup input{
-        font-size: 20px;
-        height: 60px;
-    }
-    .icon img{
-        width: 30px;
-        margin: 5px;
     }
 }   

@@ -125,13 +125,12 @@ nav li a:hover{
     padding-left: 5%;
     margin-top: 20px;
 }
-.FAQ_submenu ul{
-    margin-left: 5%;
+.FAQ_submenu{
+    margin-top: 40px;
 }
 .FAQ_submenu li{
     display: inline-block;
-    margin-left: 100px;
-    margin-top: 40px;
+    margin-left: 8%;
     font-size: 20px;
 }
 .FAQ_submenu a{
@@ -156,7 +155,7 @@ nav li a:hover{
     width: 80%;
     margin-left: 10%;
     height: 1000px;
-    padding: 20% 0% 0% 11%;
+    padding: 15% 0% 0% 11%;
 }
 #collapseTwo img{
     width: 100%;
@@ -166,6 +165,12 @@ nav li a:hover{
     width: 20%;
     height: 130px;
     margin-left: 30px;
+}
+.paneltx{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: lightgray;
+    margin-bottom: 30px;
 }
 .panel-title{
     font-size: 14px !important;
@@ -274,6 +279,26 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
     }
     .leftmenu li a:hover{
         font-size: 11px;
+    }
+    .FAQLT{
+        padding: 20% 0% 0% 11%;
+    }
+    .FAQ_menu h1{
+        font-size: 25px;
+    }
+    .FAQ_submenu li{
+        margin-left: 60px;
+        font-size: 16px;
+    }
+    .panel-title{
+        font-size: 12px !important;
+    }
+    .paneltx{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    #collapseTwo button{
+        margin-left: 15px;
     }
  }
 @media (max-width: 767px) {

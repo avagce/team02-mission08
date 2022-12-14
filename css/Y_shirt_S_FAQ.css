@@ -114,6 +114,22 @@ nav li a:hover{
     font-size: 18px;
     transform: scale(1.1);
 }
+.leftmenu{
+    position: absolute;
+    background-color: #656e7a;
+    width: 10%;
+    height: 1000px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    z-index: 1;
+}
+.leftmenu li a{
+    margin-top: 10px;
+    color: white;
+    padding-left: 5px;
+}
+.leftmenu li a:hover{font-size: 15px;}
 .FAQ{
     height: 1500px !important;
     position: relative;
@@ -123,7 +139,7 @@ nav li a:hover{
     width: 100%;
     text-align: center;
     padding-left: 5%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .FAQ_submenu{
     margin-top: 40px;
@@ -136,26 +152,11 @@ nav li a:hover{
 .FAQ_submenu a{
     color: #000;
 }
-.leftmenu{
-    position: absolute;
-    background-color: #656e7a;
-    width: 10%;
-    height: 1000px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-.leftmenu li a{
-    margin-top: 10px;
-    color: white;
-    padding-left: 5px;
-}
-.leftmenu li a:hover{font-size: 15px;}
 .FAQLT{
     width: 80%;
     margin-left: 10%;
     height: 1000px;
-    padding: 15% 0% 0% 11%;
+    padding: 20% 0% 0% 11%;
 }
 #collapseTwo img{
     width: 100%;
@@ -171,6 +172,10 @@ nav li a:hover{
     margin-top: 10px;
     color: lightgray;
     margin-bottom: 30px;
+}
+.panel{
+    border: none !important;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 10%) !important;
 }
 .panel-title{
     font-size: 14px !important;
@@ -306,6 +311,9 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin: 0 auto;
         padding: 0;
     }
+    body, html{
+        overflow-x: hidden;
+    }
     header{
         height: 50px;
         border: none !important;
@@ -362,7 +370,7 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         font-size: 11px;
     }
     .FAQ{
-        height: 2200px !important;
+        height: 1000px !important;
     }
     .search img{
         width: 20px;
@@ -384,5 +392,33 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         background: none !important;
         border: none !important;
         color: #fff;
+    }
+    .FAQ_menu{
+        padding-left: 0;
+    }
+    .FAQLT{
+        width: 80%;
+        height: 800px !important;
+        padding-top: 30% !important;
+        padding-left: 0;
+    }
+    .FAQ_menu h1{
+        font-size: 20px;
+    }
+    .FAQ_submenu li{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .FAQ_submenu a{
+        font-size: 15px;
+    }
+    .paneltx{
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    #collapseTwo button{
+        width: 20%;
+        height: 130px;
+        margin-left: 15px;
     }
 }   

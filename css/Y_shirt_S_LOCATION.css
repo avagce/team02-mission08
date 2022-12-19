@@ -120,36 +120,56 @@ nav li a:hover{
     position: relative;
     margin: 0 !important;
     width: 100%;
-    height: 2000px;
+    height: 3000px;
 }
 #map{
     width:100%;
-    height:350px;
+    height:550px;
     background: red
 }
-#container {overflow:hidden;height:300px;position:relative;}
-#btnRoadview,  #btnMap {position:absolute;top:5px;left:5px;padding:7px 12px;font-size:14px;border: 1px solid #dbdbdb;background-color: #fff;border-radius: 2px;box-shadow: 0 1px 1px rgba(0,0,0,.04);z-index:1;cursor:pointer;}
-#btnRoadview:hover,  #btnMap:hover{background-color: #fcfcfc;border: 1px solid #c1c1c1;}
-#container.view_map #mapWrapper {z-index: 10;}
-#container.view_map #btnMap {display: none;}
-#container.view_roadview #mapWrapper {z-index: 0;}
-#container.view_roadview #btnRoadview {display: none;}
 .LOCATION{
     width: 80%;
-    height: 700px;
+    height: 900px;
     padding: 50px;
     border-bottom: 3px solid lightgray;
 }
 .INFORMATION{
     width: 80%;
-    height: 400px;
+    height: 500px;
     padding: 50px;
     border-bottom: 3px solid lightgray;
 }
 .sbs{
     width: 80%;
-    height: 400px;
+    height: 700px;
     padding: 50px;
+}
+.firstsbs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+.secondsbs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+.subway{
+    width: 50%;
+    float: left;
+}
+.bus{
+    width: 50%;
+    float: right;
+}
+.navigation{
+    clear: both;
+    float: left;
+    width: 50%;
+}
+.park{
+    float: right;
+    width: 50%;
 }
 footer{
     width: 100%;

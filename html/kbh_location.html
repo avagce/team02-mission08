@@ -3,8 +3,82 @@
 <head>
     <meta charset="utf-8">
     <title>홈마트 오시는 길</title>
-    <link rel="stylesheet" type="text/css" href="map.css">
+    <link rel="stylesheet" type="text/css" href="../css/kbh_location.css">
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- <link href="https: //fonts.googleapis.com/css2? family= Noto+Sans+KR:wght@100;400;500 & display=swap" rel="stylesheet"> -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- font-awesome.css추가 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="../javascript/script.js" defer type="text/javascript"></script>
+<link rel="stylesheet" href="../css/owl.carousel.css">
+<link rel="stylesheet" href="../css/owl.theme.default.css">
+<script src="../javascript/jquery-2.2.4.min.js"></script>
+<script src="../javascript/owl.carousel.js"></script>
+<script src="../javascript/owl.autoplay.js"></script>
+<script src="../javascript/owl.navigation.js"></script>
 </head>
+<body>
+  <!-- 부트스트랩 네비게이션바 -->
+  <!-- http://bootstrapk.com/components/#navbar -->
+  <!-- 반응형 고정폭 컨테이너를 위해 .contaniner를 사용하시기 바랍니다 -->
+  <div class="container" style="padding-top: 100px;">
+    <!-- 컴포넌트-네이게이션 바- 반전된 네이게이션 바 navbar-inverse 적용-->
+  <nav class="navbar navbar-inverse">
+    <!-- 뷰포트 전체폭까지 늘어나는 최대폭 컨테이너를 위해 .container-fluid를 적용 -->
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <!-- 확장과 축소가 되는 버튼 영역은 button 태그로 마크업하고 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar">
+          <!-- sr-only(장애인분들을 배려한 웹접근성 screen reader only)
+          클래스를 사용하여 원하는 요소를 화면상에서는 사라지게 하는 동시에 웹 접근성을 높여줌 -->
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HOME MART</a>
+        <!-- font-awesome 아이콘 적용 -->
+        <i class="fas fa-user"></i>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bsnavibar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#" target="_blank">전단행사 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="active">
+           <a href="#" target="_blank">신상품 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="active">
+           <a href="#" target="_blank">베스트 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="active">
+            <!--tublar를 이용하여 회사소개 영상 재생  -->
+            <a href="../html/kbh_tublar.html" target="_blank">회사소개 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="active">
+            <a href="#" target="_blank">오시는길 <span class="sr-only">(current)</span></a>
+          </li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+<!-- </head>
 
 
 <body>
@@ -30,7 +104,7 @@
                     <li><a href="#">자주구매</a></li>
                     <li><a href="#">오시는길</a></li>                  
                 </ul>
-                </div>
+                </div> -->
                 <div class="container">
                     <div id="map"></div>
                     <div class="row mt-3">

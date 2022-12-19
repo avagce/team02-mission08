@@ -1,9 +1,12 @@
+@charset "utf-8";
+
 *{
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Cafe24Ssurround';
     font-size: 23px;
     font-weight: bolder;
     list-style: none;
     text-decoration: none;
+    border-collapse: collapse;
     margin:0px;
     padding:0px;
 }
@@ -138,19 +141,9 @@ h3{
 
 
 
-@charset "utf-8";
 
 
-*{
-    font-family: 'Cafe24Ssurround';
-    font-size: 23px;
-    font-weight: bolder;
-    list-style: none;
-    text-decoration: none;
-    border-collapse: collapse;
-    margin:0px;
-    padding:0px;
-}
+
 
 .intro_bg{
     background-image:url(../resources/images/kimbaekho_images/mart01.jpg);

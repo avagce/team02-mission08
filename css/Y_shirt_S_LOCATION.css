@@ -339,8 +339,20 @@ footer li a:hover{text-decoration: underline;}
         border: none !important;
         color: #fff;
     }
+    .center{
+        height: 1700px;
+    }
     .LOCATION{
         height: 550px;
+    }
+    .INFORMATION{
+        height: 450px;
+    }
+    .INFORMATION h2{
+        font-size: 20px !important;
+    }
+    .INFORMATION h3{
+        font-size: 15px;
     }
     #map{
         height: 300px;

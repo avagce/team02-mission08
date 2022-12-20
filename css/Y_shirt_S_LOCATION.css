@@ -65,8 +65,8 @@ header{
     display: none;
     position: absolute;
     right: 0%;
-    margin-top: 18px;
-    margin-right: 20px;
+    margin-top: 10px !important;
+    margin-right: 15px !important;
 }
 .search{
     position: absolute;
@@ -122,6 +122,9 @@ nav li a:hover{
     margin: 0 !important;
     width: 100%;
     height: 2300px;
+}
+.LOCATION .fas{
+    font-size: 50px;
 }
 #map{
     width:100%;
@@ -256,6 +259,21 @@ footer li a:hover{text-decoration: underline;}
         margin-left: 5px;
         background: #656e7a;
     }
+    .LOCATION .fas{
+        font-size: 40px;
+    }
+    .LOCATION{
+        height: 700px;
+    }
+    .LOCATION h1{
+        font-size: 30px;
+    }
+    .INFORMATION h2{
+        font-size: 25px;
+    }
+    #map{
+        height: 400px;
+    }
     .sbs svg{
         width: 60px;
         height: 60px;
@@ -334,16 +352,22 @@ footer li a:hover{text-decoration: underline;}
         margin-bottom: 5px !important;
     
     }
-    .fas{
+    .hbg{
         background: none !important;
         border: none !important;
-        color: #fff;
+        color: #fff !important;
+    }
+    .LOCATION .fas{
+        font-size: 30px;
     }
     .center{
         height: 1700px;
     }
     .LOCATION{
         height: 550px;
+    }
+    .LOCATION h1{
+        font-size: 25px;
     }
     .INFORMATION{
         height: 450px;

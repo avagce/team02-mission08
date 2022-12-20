@@ -39,7 +39,7 @@ header{
 }
 .top_menu{
     float: right;
-    width: 240px;
+    width: 280px;
     line-height: 40px;
     color: #fff;
     position: absolute;
@@ -52,21 +52,19 @@ header{
 .top_menu a{
     color: #fff;
     margin-left: 10px;
-    transition: .2s;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: "맑은 고딕";
 }
 .top_menu a:hover{
     color: #fff;
-    font-size: 13px;
-    text-decoration: none;
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 .hbg{
     display: none;
     position: absolute;
     right: 0%;
-    margin-top: 18px;
-    margin-right: 20px;
+    margin-top: 10px !important;
+    margin-right: 15px !important;
 }
 .search{
     position: absolute;
@@ -122,6 +120,9 @@ nav li a:hover{
     margin: 0 !important;
     width: 100%;
     height: 2300px;
+}
+.LOCATION .fas{
+    font-size: 50px;
 }
 #map{
     width:100%;
@@ -190,11 +191,16 @@ footer p{
     padding-top: 20px;
     line-height: 20px;
 }
-footer p a{color: #000;}
-footer p a:hover{font-weight: bold; text-decoration: underline;}
+footer p a{
+    color: #000;
+}
+footer p a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
 .ftlist{
     margin-right: 10px;
-    width: 250px;
+    width: 280px;
     height: 25px;
 }
 footer li{
@@ -204,6 +210,7 @@ footer li{
 }
 footer li a{
     font-size: 10px;
+    font-family: "맑은 고딕";
     color: #000;
 }
 footer li a:hover{text-decoration: underline;}
@@ -230,12 +237,8 @@ footer li a:hover{text-decoration: underline;}
         margin-left: 50px;
     }
     .top_menu a{
-        font-size: 10px;
+        font-size: 12px;
         float: left;
-    }
-    .top_menu a:hover{
-        font-size: 11px;
-        color: #fff;
     }
     nav > ul{
         font-size: 14px;
@@ -246,6 +249,9 @@ footer li a:hover{text-decoration: underline;}
     nav > ul > a{
         margin: 10px;
     }
+    nav li a:hover{
+        font-size: 14px;
+    }
     .search2{
         width: 40px;
         height: 25px;
@@ -255,6 +261,21 @@ footer li a:hover{text-decoration: underline;}
         margin-top: 12px;
         margin-left: 5px;
         background: #656e7a;
+    }
+    .LOCATION .fas{
+        font-size: 40px;
+    }
+    .LOCATION{
+        height: 700px;
+    }
+    .LOCATION h1{
+        font-size: 30px;
+    }
+    .INFORMATION h2{
+        font-size: 25px;
+    }
+    #map{
+        height: 400px;
     }
     .sbs svg{
         width: 60px;
@@ -290,13 +311,9 @@ footer li a:hover{text-decoration: underline;}
         margin-right: 20px;
     }
     .top_menu a{
-        font-size: 8px;
+        font-size: 12px;
         margin-left: 5px;
         line-height: 50px;
-    }
-    .top_menu a:hover{
-        font-size: 11px;
-        color: #fff;
     }
     nav li a{
         background-color: none !important;
@@ -334,13 +351,34 @@ footer li a:hover{text-decoration: underline;}
         margin-bottom: 5px !important;
     
     }
-    .fas{
+    .hbg{
         background: none !important;
         border: none !important;
-        color: #fff;
+        color: #fff !important;
+    }
+    .LOCATION .fas{
+        font-size: 30px;
+    }
+    .center{
+        height: 1700px;
     }
     .LOCATION{
-        width: 100%;
+        height: 550px;
+    }
+    .LOCATION h1{
+        font-size: 25px;
+    }
+    .INFORMATION{
+        height: 450px;
+    }
+    .INFORMATION h2{
+        font-size: 20px !important;
+    }
+    .INFORMATION h3{
+        font-size: 15px;
+    }
+    #map{
+        height: 300px;
     }
     .sbs svg{
         width: 40px;

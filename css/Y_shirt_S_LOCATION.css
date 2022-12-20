@@ -191,11 +191,16 @@ footer p{
     padding-top: 20px;
     line-height: 20px;
 }
-footer p a{color: #000;}
-footer p a:hover{font-weight: bold; text-decoration: underline;}
+footer p a{
+    color: #000;
+}
+footer p a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
 .ftlist{
     margin-right: 10px;
-    width: 250px;
+    width: 280px;
     height: 25px;
 }
 footer li{
@@ -205,6 +210,7 @@ footer li{
 }
 footer li a{
     font-size: 10px;
+    font-family: "맑은 고딕";
     color: #000;
 }
 footer li a:hover{text-decoration: underline;}

@@ -39,7 +39,7 @@ header{
 }
 .top_menu{
     float: right;
-    width: 240px;
+    width: 280px;
     line-height: 40px;
     color: #fff;
     position: absolute;
@@ -52,14 +52,12 @@ header{
 .top_menu a{
     color: #fff;
     margin-left: 10px;
-    transition: .2s;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: "맑은 고딕";
 }
 .top_menu a:hover{
     color: #fff;
-    font-size: 13px;
-    text-decoration: none;
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 .hbg{
     display: none;
@@ -233,12 +231,8 @@ footer li a:hover{text-decoration: underline;}
         margin-left: 50px;
     }
     .top_menu a{
-        font-size: 10px;
+        font-size: 12px;
         float: left;
-    }
-    .top_menu a:hover{
-        font-size: 11px;
-        color: #fff;
     }
     nav > ul{
         font-size: 14px;
@@ -248,6 +242,9 @@ footer li a:hover{text-decoration: underline;}
     }
     nav > ul > a{
         margin: 10px;
+    }
+    nav li a:hover{
+        font-size: 14px;
     }
     .search2{
         width: 40px;
@@ -308,13 +305,9 @@ footer li a:hover{text-decoration: underline;}
         margin-right: 20px;
     }
     .top_menu a{
-        font-size: 8px;
+        font-size: 12px;
         margin-left: 5px;
         line-height: 50px;
-    }
-    .top_menu a:hover{
-        font-size: 11px;
-        color: #fff;
     }
     nav li a{
         background-color: none !important;

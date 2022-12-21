@@ -347,7 +347,6 @@ i{
     font-size: 50px;
     margin-top: 20px;
     margin-bottom: 1px;
-    color: #;
     
 }
 
@@ -379,4 +378,13 @@ i{
     #bsnavibar
     {
         display: flex!important;
+    }
+
+    h3{
+        color: #ffbb00 !important;
+    }
+
+    p{
+        color: #44e6ff !important;
+
     }

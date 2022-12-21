@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈마트 오시는 길</title>
     <link rel="stylesheet" type="text/css" href="../css/kbh_location.css">
     <!-- 합쳐지고 최소화된 최신 CSS -->
@@ -13,9 +15,37 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <!-- font-awesome.css추가 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<script src="../javascript/script.js" defer type="text/javascript"></script>
+<script src="../javascript/script.js" defer type="text/javascript"
+></script>
+<script src="../javascript/vegas.min.js"></script>
+<link rel="stylesheet" href="/css/vegas.min.css">
+
 </head>
 
+
+<script>
+  $(document).ready(function() {
+      //문서 전체(body 태그)에 플러그인 적용함
+      $('body').vegas({
+      slides: [
+          //초반이미지 나타나게 함. 주석처리하면 안 나타남
+          // {src: '/videos/sea.jpg'},
+          {
+              //video{}안에 배경 동영상과 옵션값 지정함
+      video: {
+          //src 속성을 사용해 동영상 지정해 줌
+          src: [
+              '/resources/images/videos/kbh_sky.mp4'],
+              //loop 속성을 사용해 동영상 반복 여부 지정함
+          loop: true,
+          //동영상을 무음상태로 만들어 줌
+          mute: true
+      }
+  }
+]
+});
+});
+</script>
 
 <body>
   <!-- 부트스트랩 네비게이션바 -->

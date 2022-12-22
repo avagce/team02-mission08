@@ -133,17 +133,6 @@ div h2{
     
 }
 
-h3{
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 1px;
-}
-
-
-
-
-
-
 
 .intro_bg{
     background-image:url(../resources/images/kimbaekho_images/mart01.jpg);
@@ -353,3 +342,70 @@ i{
     color: #ffbb00 !important;
 } 
 
+
+.container{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    
+}
+
+#bsnavibar{
+    padding-left: 0%;
+}
+
+.nav navbar-nav{
+    padding: 1px;
+    margin: 0 auto;
+}
+
+
+      /* 801px 이상(PC) */
+      @media screen and (min-width:801px){
+        .content {margin: 0 auto; width: 20%; float: left !important;}
+    }
+
+    /* 481PX~800PX 까지 적용(태블릿PC) */
+    @media screen and (min-width:800px){
+        .content {margin: 0 auto; width: 30%; float: left !important;}
+    }
+
+    /* 480PX까지 적용(모바일) */
+    @media screen and (min-width:480px){
+        .content {margin: 0 auto; width: 99%; float: left  !important;}
+
+    }
+
+    #bsnavibar
+    {
+        display: flex!important;
+    }
+
+    h3{
+        color: #ffbb00 !important;
+        -webkit-text-stroke: 1px rgb(13, 98, 255);
+
+    }
+
+    p{
+        color: #865c00 !important;
+        -webkit-text-stroke: 0.1px rgb(157, 255, 0);
+
+
+    }
+
+    #map{
+        width:100%;
+        padding-bottom: 30%;
+        position: relative;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .nav > li > a {
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 2px;
+        padding: 50px 50px;
+    }

@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈마트 오시는 길</title>
     <link rel="stylesheet" type="text/css" href="../css/kbh_location.css">
-        <!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<!-- 부가적인 테마 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<!-- <link href="https: //fonts.googleapis.com/css2? family= Noto+Sans+KR:wght@100;400;500 & display=swap" rel="stylesheet"> -->
     <!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<!-- 부가적인 테마 -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="../css/bootstrap_v3_3_2.min.css">
+<link rel="stylesheet" href="/css/bootstrap_v3_3_2.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <!-- font-awesome.css추가 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<script src="../javascript/script.js" defer type="text/javascript"></script>
-<link rel="stylesheet" href="../css/owl.carousel.css">
-<link rel="stylesheet" href="../css/owl.theme.default.css">
-<script src="../javascript/jquery-2.2.4.min.js"></script>
-<script src="../javascript/owl.carousel.js"></script>
-<script src="../javascript/owl.autoplay.js"></script>
-<script src="../javascript/owl.navigation.js"></script>
+<script src="../javascript/script.js" defer type="text/javascript"
+></script>
+<script src="../javascript/vegas.min.js"></script>
+<link rel="stylesheet" href="/css/vegas.min.css">
+<script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/script.js" defer type="text/javascript"></script>
+
+
 </head>
+
+
+<script>
+  $(document).ready(function() {
+      //문서 전체(body 태그)에 플러그인 적용함
+      $('body').vegas({
+      slides: [
+          //초반이미지 나타나게 함. 주석처리하면 안 나타남
+          // {src: '/videos/sea.jpg'},
+          {
+              //video{}안에 배경 동영상과 옵션값 지정함
+      video: {
+          //src 속성을 사용해 동영상 지정해 줌
+          src: [
+              '/resources/images/videos/kbh_sky.mp4'],
+              //loop 속성을 사용해 동영상 반복 여부 지정함
+          loop: true,
+          //동영상을 무음상태로 만들어 줌
+          mute: true
+      }
+  }
+]
+});
+});
+</script>
+
 <body>
   <!-- 부트스트랩 네비게이션바 -->
   <!-- http://bootstrapk.com/components/#navbar -->
@@ -53,9 +75,10 @@
         <!-- font-awesome 아이콘 적용 -->
         <i class="fas fa-user"></i>
       </div>
+    </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bsnavibar">
+      <div class="collapse navbar-collapse" id="bsnavibar" >
         <ul class="nav navbar-nav">
           <li class="active">
             <a href="#" target="_blank">전단행사 <span class="sr-only">(current)</span></a>
@@ -68,7 +91,7 @@
           </li>
           <li class="active">
             <!--tublar를 이용하여 회사소개 영상 재생  -->
-            <a href="../html/kbh_tublar.html" target="_blank">회사소개 <span class="sr-only">(current)</span></a>
+            <a href="../html/kbh_tublar.html" target="_blank">회사소개 <span class="sr-only"  class="form-control">(current)</span></a>
           </li>
           <li class="active">
             <a href="#" target="_blank">오시는길 <span class="sr-only">(current)</span></a>
@@ -77,34 +100,7 @@
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-<!-- </head>
-
-
-<body>
-    <div class="wrap">
-        <div class="intro_bg">
-            <div class="header">
-                <div class="searcharea">
-                    <form>
-                        <input type="search" placeholder="search">
-                        <span>검색</span>
-                        <form action="#" method="post">
-                    </form>
-                    <div class="sign_up">
-                        <a href="/team02-mission-01-master/html/kbh_about_content/sign up.html" target="_blank">
-                    
-                    </div>
-                </div>
-                <ul class="nav">
-                    <li><a href="#">전단행사</a></li>
-                    <li><a href="#">신상품</a></li>
-                    <li><a href="#">기획전</a></li>
-                    <li><a href="#">베스트</a></li>
-                    <li><a href="#">자주구매</a></li>
-                    <li><a href="#">오시는길</a></li>                  
-                </ul>
-                </div> -->
+    </nav>
                 <div class="container">
                     <div id="map"></div>
                     <div class="row mt-3">
@@ -118,8 +114,6 @@
                         </div>
                     </div>
                 </div>
-
-      
             </div>
         </div> 
     </div>

@@ -29,27 +29,27 @@
 
 <script>
   $(document).ready(function() {
-      //문서 전체(body 태그)에 플러그인 적용함
-      $('body').vegas({
+    //문서 전체(body 태그)에 플러그인 적용함
+    $('body').vegas({
       slides: [
-          //초반이미지 나타나게 함. 주석처리하면 안 나타남
-          // {src: '/videos/sea.jpg'},
-          {
-              //video{}안에 배경 동영상과 옵션값 지정함
-      video: {
-          //src 속성을 사용해 동영상 지정해 줌
-          src: [
+        //초반이미지 나타나게 함. 주석처리하면 안 나타남
+        // {src: '/videos/sea.jpg'},
+        {
+          //video{}안에 배경 동영상과 옵션값 지정함
+          video: {
+            //src 속성을 사용해 동영상 지정해 줌
+            src: [
               '/resources/images/videos/kbh_sky.mp4'],
               //loop 속성을 사용해 동영상 반복 여부 지정함
-          loop: true,
-          //동영상을 무음상태로 만들어 줌
-          mute: true
-      }
-  }
-]
-});
-});
-</script>
+              loop: true,
+              //동영상을 무음상태로 만들어 줌
+              mute: true
+            }
+          }
+        ]
+      });
+    });
+    </script>
 
 <body>
   <!-- 부트스트랩 네비게이션바 -->
@@ -57,37 +57,37 @@
   <!-- 반응형 고정폭 컨테이너를 위해 .contaniner를 사용하시기 바랍니다 -->
   <div class="container" style="padding-top: 100px;">
     <!-- 컴포넌트-네이게이션 바- 반전된 네이게이션 바 navbar-inverse 적용-->
-  <nav class="navbar navbar-inverse">
-    <!-- 뷰포트 전체폭까지 늘어나는 최대폭 컨테이너를 위해 .container-fluid를 적용 -->
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <!-- 확장과 축소가 되는 버튼 영역은 button 태그로 마크업하고 -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar">
-          <!-- sr-only(장애인분들을 배려한 웹접근성 screen reader only)
-          클래스를 사용하여 원하는 요소를 화면상에서는 사라지게 하는 동시에 웹 접근성을 높여줌 -->
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">HOME MART</a>
-        <!-- font-awesome 아이콘 적용 -->
-        <i class="fas fa-user"></i>
-      </div>
-    </div>
-  
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bsnavibar" >
+    <nav class="navbar navbar-inverse">
+      <!-- 뷰포트 전체폭까지 늘어나는 최대폭 컨테이너를 위해 .container-fluid를 적용 -->
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <!-- 확장과 축소가 되는 버튼 영역은 button 태그로 마크업하고 -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar">
+            <!-- sr-only(장애인분들을 배려한 웹접근성 screen reader only)
+              클래스를 사용하여 원하는 요소를 화면상에서는 사라지게 하는 동시에 웹 접근성을 높여줌 -->
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">HOME MART</a>
+            <!-- font-awesome 아이콘 적용 -->
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bsnavibar" >
         <ul class="nav navbar-nav">
           <li class="active">
             <a href="#" target="_blank">전단행사 <span class="sr-only">(current)</span></a>
           </li>
           <li class="active">
-           <a href="#" target="_blank">신상품 <span class="sr-only">(current)</span></a>
+            <a href="#" target="_blank">신상품 <span class="sr-only">(current)</span></a>
           </li>
           <li class="active">
-           <a href="#" target="_blank">베스트 <span class="sr-only">(current)</span></a>
+            <a href="#" target="_blank">베스트 <span class="sr-only">(current)</span></a>
           </li>
           <li class="active">
             <!--tublar를 이용하여 회사소개 영상 재생  -->
@@ -96,27 +96,29 @@
           <li class="active">
             <a href="#" target="_blank">오시는길 <span class="sr-only">(current)</span></a>
           </li>
-            </ul>
-          </li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </nav>
-                <div class="container">
-                    <div id="map"></div>
-                    <div class="row mt-3">
-                        <div class="col-md-12">
-                            <h3>홈마트 오시는 길</h3>
-                            <p>
-                                이메일 : bhkim1291@gmail.com<br>
-                                전화번호 : 02-1234-5678<br>
-                                주소 : 행복시 행복동 123번지 2층
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+<div class="container">
+  <div id="map"></div>
+  <div class="row mt-3">
+    <div class="col-md-12">
+          <img src="/resources/images/kbh_map.svg" width="100px" height="100px"  alt="svg 이미지" >
+          
+          <h3>홈마트 오시는 길</h3>
+          <p>
+            이메일 : bhkim1291@gmail.com<br>
+            전화번호 : 02-1234-5678<br>
+            주소 : 행복시 행복동 123번지 2층
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
+</div> 
+</div>
 
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=55fadbaffd48c6dcbcd6419f740a023b"></script>
 

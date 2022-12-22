@@ -410,3 +410,8 @@ i{
         margin-top: 10px;
         /* font-size: 25px !important; */
     }
+
+    img {
+        position: relative;
+    }
+    

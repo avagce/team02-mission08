@@ -1,0 +1,94 @@
+@charset "uft-8";
+
+* {
+    margin: 0 auto !important;
+    padding: 0;
+    list-style: none;
+    font-family: 'Stylish', sans-serif;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+div.navbar-header{
+    width: 100%;
+}
+
+p.maintitle{
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+div.page-header{
+    height: 70px;
+    line-height: 70px;
+    padding: 9px !important;
+
+}
+
+h1 {
+    height: 70px;
+    line-height: 70px
+}
+
+.page-header{
+    padding: 0;
+}
+
+.navbar-brand > img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -16px;
+}
+
+.dropdown-menu{
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.dropdown-menu li a {
+    font-size: 20px !important;
+    margin: 10px;
+}
+
+.dropdown-toggle{
+    font-size: 20px;
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    line-height: 10vh;
+    background-color: aliceblue;
+    top: 120vh;
+}
+
+.footer{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    height: 100%;
+    width: 100%;
+    background-color: paleturquoise;
+    
+}
+
+
+footer a:hover{
+    text-decoration: none;
+}
+
+.footer:hover{
+    color: #666;
+}
+
+.fa-youtube{
+    color: red;
+}
